@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Wed May 11 2016 20:40:10 GMT+0000 (UTC) -->
+<html data-wf-site="5625bbac5b5a72607dba538b" data-wf-page="5716efa456957c433287f922">
+<head>
+  <meta charset="utf-8">
+  <title>Settings - Purchases</title>
+  <meta property="og:title" content="Settings - Purchases">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/seek-community.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon-01.png">
+  <link rel="apple-touch-icon" href="images/Webclip-01.png">
+  <script type="text/javascript">
+    $('input[type="range"]').on('mouseup', function() {
+      this.blur();
+    }).on('mousedown input', function() {
+      styl.inject('input[type=range]:focus::-webkit-slider-thumb:after, input[type=range]:focus::-ms-thumb:after, input[type=range]:focus::-moz-range-thumb:after', {
+        content: "'" + this.value + "'"
+      }).apply();
+    });
+  </script>
+</head>
+<body>
+  <div data-collapse="medium" data-animation="over-right" data-duration="400" class="w-nav navbar train">
+    <a href="home.html" class="w-nav-brand"><img width="200" src="images/Logo - Seek-Community193H-01.png" class="logo">
+    </a>
+    <nav role="navigation" class="w-nav-menu navmenu"><a href="home.html" class="w-nav-link navlink trainerprofilelinks">HOME</a>
+      <div data-delay="0" class="w-dropdown">
+        <div class="w-dropdown-toggle navlink menudropdown trainlink">
+          <div>TRAIN</div>
+        </div>
+        <nav class="w-dropdown-list menuddlist"><a href="train-workout.html" class="w-dropdown-link ddlink">Workouts</a><a href="train-trainers.html" class="w-dropdown-link ddlink">Trainers</a><a href="train-nutrition.html" class="w-dropdown-link ddlink">Nutrition</a>
+        </nav>
+      </div>
+      <div data-delay="0" class="w-dropdown">
+        <div class="w-dropdown-toggle navlink menudropdown learnlink">
+          <div>LEARN</div>
+        </div>
+        <nav class="w-dropdown-list menuddlist"><a href="#" class="w-dropdown-link ddlink">Link 1</a><a href="#" class="w-dropdown-link ddlink">Link 2</a><a href="#" class="w-dropdown-link ddlink">Link 3</a>
+        </nav>
+      </div>
+      <div data-delay="0" class="w-dropdown">
+        <div class="w-dropdown-toggle navlink menudropdown connectlink">
+          <div>Connect</div>
+        </div>
+        <nav class="w-dropdown-list menuddlist"><a href="#" class="w-dropdown-link ddlink">Link 1</a><a href="#" class="w-dropdown-link ddlink">Link 2</a><a href="#" class="w-dropdown-link ddlink">Link 3</a>
+        </nav>
+      </div>
+      <a href="#" class="w-inline-block profilepiclink"><img width="40" src="images/communityDefaultPic_grey_48px.png" class="profilepic">
+      </a>
+      <div data-delay="0" class="w-dropdown settingsdropdown">
+        <div class="w-dropdown-toggle navlink menudropdown user trainlink settingsdd">
+          <div>Settings</div>
+        </div>
+        <nav class="w-dropdown-list menuddlist userpicdd"><a href="settings-my-profile.html" class="w-dropdown-link ddlink">Settings</a><a href="#" class="w-dropdown-link ddlink">LoG OUT</a>
+        </nav>
+      </div>
+    </nav>
+    <div class="w-nav-button menubutton">
+      <div class="w-icon-nav-menu w-hidden-main mobiicon"></div>
+    </div>
+  </div>
+  <div data-collapse="medium" data-animation="over-left" data-duration="400" data-contain="1" data-ix="loadfromleft" class="w-nav sidenav home">
+    <div class="w-container">
+      <nav role="navigation" class="w-nav-menu sidenavmenu"><a href="settings-my-profile.html" class="w-nav-link sidenavlink settings">My Profile</a><a href="settings-activity.html" class="w-nav-link sidenavlink settings">Activity</a><a href="settings-diet.html" class="w-nav-link sidenavlink settings">Diet</a><a href="settings-purchases.html" class="w-nav-link sidenavlink settings selected">Purchases</a><a href="settings-privacy.html" class="w-nav-link sidenavlink settings">Privacy</a>
+      </nav>
+      <div class="w-nav-button menubutton sidenavmenubutton">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div data-ix="loadfromleft" class="w-section seeksearch settings">
+    <div class="w-container contentcontainer trainerprofilecontainer">
+      <div class="settingsdiv">
+        <h1 class="settingsheading">Purchases</h1>
+      </div>
+      <div class="settingsdiv categories">
+        <div class="w-row">
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <h1 class="logheader purchases">Date</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <h1 class="logheader purchases">Product</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <h1 class="logheader purchases">Price</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+            <h1 class="logheader purchases">View Invoice</h1>
+          </div>
+        </div>
+      </div>
+      <div logchart="logchart" class="logchart">
+        <div class="w-row toplog">
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log toplt">
+            <h1 class="logheader content">4/01/2016</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log topmid">
+            <h1 class="logheader content product">Leg Destroyer Part 1</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log topmid product">
+            <h1 class="logheader content">$24.99</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log toprt"><img width="20" src="images/downloadarrow-01.svg" class="dlarrow">
+          </div>
+        </div>
+        <div class="w-row midlog">
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log midltoutter">
+            <h1 class="logheader content">03/31/2016</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log midinner">
+            <h1 class="logheader content product">Leg Destroyer Part 1</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log midinner product">
+            <h1 class="logheader content">$24.99</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log midrtoutter"><img width="20" src="images/downloadarrow-01.svg" class="dlarrow">
+          </div>
+        </div>
+        <div class="w-row botlog">
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log botlt">
+            <h1 class="logheader content">03/23/2016</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log botmid">
+            <h1 class="logheader content product">Leg Destroyer Part 1</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log botmid product">
+            <h1 class="logheader content">$24.99</h1>
+          </div>
+          <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3 log botrt"><img width="20" src="images/downloadarrow-01.svg" class="dlarrow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

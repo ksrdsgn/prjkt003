@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Wed May 11 2016 20:40:09 GMT+0000 (UTC) -->
+<html data-wf-site="5625bbac5b5a72607dba538b" data-wf-page="5716efa456957c433287f917">
+<head>
+  <meta charset="utf-8">
+  <title>Symptoms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/seek-community.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon-01.png">
+  <link rel="apple-touch-icon" href="images/Webclip-01.png">
+  <script type="text/javascript">
+    $('input[type="range"]').on('mouseup', function() {
+      this.blur();
+    }).on('mousedown input', function() {
+      styl.inject('input[type=range]:focus::-webkit-slider-thumb:after, input[type=range]:focus::-ms-thumb:after, input[type=range]:focus::-moz-range-thumb:after', {
+        content: "'" + this.value + "'"
+      }).apply();
+    });
+  </script>
+</head>
+<body class="communitybg">
+  <div data-ix="load" class="w-section">
+    <div class="w-container">
+      <div class="communitybox createaccbox symptomsbox">
+        <div>
+          <div class="boxheader symptoms">
+            <h1 class="boxtitle">Symptoms</h1>
+            <div class="boxdesc">Explain your symptom briefly:</div>
+          </div>
+        </div>
+        <div class="insidecontainer">
+          <div class="w-form">
+            <form id="wf-form-symptoms" name="wf-form-symptoms" data-name="symptoms" action="javascript:void(0);">
+              <input id="Symptoms" type="text" placeholder="“I suddenly am having trouble breathing”, etc..." name="Symptoms" data-name="Symptoms" required="required" class="w-input selectfield symptomsfield">
+            </form>
+            <div class="w-form-done">
+              <p>Thank you! Your submission has been received!</p>
+            </div>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-clearfix continuebuttonrow"><a data-ix="showdescpbuttonrow" class="w-button continuebuttons symptomsbutton">Continue</a>
+        </div>
+        <div data-ix="display-none-on-load" class="w-clearfix redorow"><a href="symptoms.html" class="w-button continuebuttons symptomsbutton">Redo</a>
+        </div>
+        <div data-ix="display-none-on-load" class="sympdesccontainer">
+          <div class="symptomstxtblock listheading">Given your current situation here are your likely results:</div>
+          <div class="symptomstxtblock symptomsheader mostlikely">1) 98% - Common Cold</div>
+          <div class="symptomstxtblock listdesc">Don’t worry, this is typical at this type of year. We recommend increasing intake of fluids and vitamin C.</div>
+          <div class="symptomstxtblock symptomsheader lesslikely">2) 2% - Reaction to Medication</div>
+          <div class="symptomstxtblock listdesc lesslikely">Could be a symptom correlated to a medication you are taking.</div>
+          <div class="w-clearfix buttonrow symptoms"><a data-ix="showsuggestion" class="w-button symptomssuggestionbutton">Suggestions</a>
+          </div>
+        </div>
+        <div data-ix="display-none-on-load" class="suggestioncontainer">
+          <div class="symptomstxtblock listheading suggestheading">Here's what we suggest:</div>
+          <div class="symptomstxtblock symptomsheader suggestion">1) Relax</div>
+          <div class="symptomstxtblock listdesc suggestion">You’re going to get better soon.</div>
+          <div class="symptomstxtblock symptomsheader suggestion">2) Drink lots of fluids:</div>
+          <div class="symptomstxtblock listdesc suggestion">Drinking fluids replenishes body when sick with fever, cold etc...</div>
+          <div class="symptomstxtblock symptomsheader suggestion">3) Take <a class="symptomslink" data-ix="open-modal-window-2" symptomslink="symptomsLink" href="#">Vitamin C Pills</a>:</div>
+          <div class="symptomstxtblock listdesc suggestion">These will help to strengthen your immune system.</div>
+          <div class="symptomstxtblock symptomsheader suggestion">4) Try to get some sleep:</div>
+          <div class="symptomstxtblock listdesc suggestion">Rest allows the body to heal.</div>
+          <div class="w-clearfix buttonrow symptoms"><a href="home.html" class="w-button symptomssuggestionbutton donebtn">Done</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-ix="modalnoneload" class="w-section modal-background">
+    <div class="modal-window">
+      <div class="prescribebox">
+        <div class="boxheader">
+          <h1 class="boxtitle">Vitamin C</h1>
+          <div class="boxdesc">(L - ascorbic acid)</div>
+        </div>
+        <div class="insidecontainer"><img width="200" src="images/ForPharm.jpg" class="prescribeimage">
+          <div class="prescribetitle">Description:</div>
+          <p class="prescribetxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          <div class="prescribetitle">Intake:</div>
+          <p class="prescribetxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p><a href="#" data-ix="close-modal-trophy" class="w-button modal-open-button">Return</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

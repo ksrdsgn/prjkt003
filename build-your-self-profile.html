@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Wed May 11 2016 20:40:10 GMT+0000 (UTC) -->
+<html data-wf-site="5625bbac5b5a72607dba538b" data-wf-page="5716efa456957c433287f91b">
+<head>
+  <meta charset="utf-8">
+  <title>Build Your Self Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/seek-community.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon-01.png">
+  <link rel="apple-touch-icon" href="images/Webclip-01.png">
+  <script type="text/javascript">
+    $('input[type="range"]').on('mouseup', function() {
+      this.blur();
+    }).on('mousedown input', function() {
+      styl.inject('input[type=range]:focus::-webkit-slider-thumb:after, input[type=range]:focus::-ms-thumb:after, input[type=range]:focus::-moz-range-thumb:after', {
+        content: "'" + this.value + "'"
+      }).apply();
+    });
+  </script>
+</head>
+<body class="communitybg">
+  <div data-ix="load" class="w-section">
+    <div class="w-container">
+      <div class="communitybox createaccbox byspbox">
+        <div>
+          <div class="boxheader">
+            <h1 class="boxtitle">Build Your Self Profile</h1>
+            <div class="boxdesc">Let's get started! Tell us a little about yourself!</div>
+          </div>
+        </div>
+        <div class="w-form">
+          <form id="wf-form-Build-Your-Self-Profile" name="wf-form-Build-Your-Self-Profile" data-name="Build Your Self Profile" action="#">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6">
+                <div data-ix="show-height-dropdown" class="heightbox">
+                  <div class="heighttext">Height (ft. in.)</div>
+                </div>
+                <div data-ix="display-none-on-load" class="heightdropdowns">
+                  <select id="Height-ft" name="Height-ft" data-name="Height (ft)" required="required" class="w-select selectfield height ft">
+                    <option value="">ft.</option>
+                    <option value="0'">0'</option>
+                    <option value="1'">1'</option>
+                    <option value="2'">2'</option>
+                    <option value="3'">3'</option>
+                    <option value="4'">4'</option>
+                    <option value="5'">5'</option>
+                    <option value="6'">6'</option>
+                    <option value="7'">7'</option>
+                    <option value="8'">8'</option>
+                  </select>
+                  <select id="Height-In" name="Height-In" data-name="Height (In)" required="required" class="w-select selectfield height in">
+                    <option value="">in.</option>
+                    <option value="0&quot;">0"</option>
+                    <option value="1&quot;">1"</option>
+                    <option value="2&quot;">2"</option>
+                    <option value="3&quot;">3"</option>
+                    <option value="4&quot;">4"</option>
+                    <option value="5&quot;">5"</option>
+                    <option value="6&quot;">6"</option>
+                    <option value="7&quot;">7"</option>
+                    <option value="8&quot;">8"</option>
+                    <option value="9&quot;">9"</option>
+                    <option value="10&quot;">10"</option>
+                    <option value="11&quot;">11"</option>
+                  </select>
+                </div>
+              </div>
+              <div class="w-col w-col-6 w-col-small-6">
+                <input id="Weight" type="text" placeholder="Weight (lbs.)" name="Weight" data-name="Weight" required="required" class="w-input loginfields createaccfields rtcol byspfields">
+              </div>
+            </div>
+          </form>
+          <div class="w-form-done">
+            <p>Thank you! Your submission has been received!</p>
+          </div>
+          <div class="w-form-fail">
+            <p>Oops! Something went wrong while submitting the form</p>
+          </div>
+        </div>
+        <div class="activitylevel">
+          <div class="w-embed movable-slider">
+            <div class="slider">
+              <input type="range" min="0" max="10" step="1" value="5">
+            </div>
+            <style>
+              .slider {
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+              }
+              input[type=range] {
+                -webkit-appearance: none;
+                background: none;
+              }
+              input[type=range]::-webkit-slider-runnable-track {
+                height: 5px;
+                background: #ddd;
+                border: none;
+                border-radius: 3px;
+              }
+              input[type=range]::-ms-track {
+                height: 5px;
+                background: #ddd;
+                border: none;
+                border-radius: 3px;
+              }
+              input[type=range]::-moz-range-track {
+                height: 5px;
+                background: #ddd;
+                border: none;
+                border-radius: 3px;
+              }
+              input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                border: none;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                background: #555;
+                margin-top: -5px;
+              }
+              input[type=range]::-ms-thumb {
+                -webkit-appearance: none;
+                border: none;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                background: #555;
+                margin-top: -5px;
+              }
+              input[type=range]::-moz-range-thumb {
+                -webkit-appearance: none;
+                border: none;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                background: #555;
+                margin-top: -5px;
+              }
+              input[type=range]:focus {
+                outline: none;
+              }
+              input[type=range]:focus::-webkit-slider-thumb:after {
+                top: -35px;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                        transform: translateX(-50%);
+                background: #eee;
+                border-radius: 5px;
+                color: #555;
+                padding: 5px 10px;
+                border: 2px solid #555;
+              }
+              input[type=range]:focus::-ms-thumb:after {
+                top: -35px;
+                left: 50%;
+                -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                background: #eee;
+                border-radius: 5px;
+                color: #555;
+                padding: 5px 10px;
+                border: 2px solid #555;
+              }
+              input[type=range]:focus::-moz-range-thumb:after {
+                top: -35px;
+                left: 50;
+                transform: translateX(-50%);
+                background: #eee;
+                border-radius: 5px;
+                color: #555;
+                padding: 5px 10px;
+                border: 2px solid #555;
+              }
+              input[type=range]:focus::-webkit-slider-runnable-track {
+                background: #ccc;
+              }
+              input[type=range]:focus::-ms-track {
+                background: #ccc;
+              }
+              input[type=range]:focus::-moz-range-track {
+                background: #ccc;
+              }
+            </style>
+          </div>
+          <div class="w-row activitylevelrow">
+            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 sedentary"><img width="35" src="images/sedatary_white_48px.svg" class="activityicons">
+              <div class="activityleveltext">Sedentary</div>
+            </div>
+            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+              <div class="activityleveltext">How much do you move around in a day?</div>
+            </div>
+            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><img width="35" src="images/runningicon_white_48px.svg" class="activityicons">
+              <div class="activityleveltext">Athlete</div>
+            </div>
+          </div>
+          <div class="w-row">
+            <div class="w-col w-col-6 w-col-small-6 column1">
+              <div class="activityboxes">
+                <div class="activtyboxtext">Steps per day (optional)</div>
+                <div class="w-form">
+                  <form id="wf-form-Steps-per-day" name="wf-form-Steps-per-day" data-name="Steps per day" action="#">
+                    <input id="Steps-per-day" type="text" placeholder="Estimate" name="Steps-per-day" data-name="Steps per day" class="w-input activityboxforms">
+                    <div class="activtyboxtext">Handicap?</div>
+                    <div class="w-radio disabilitybuttonfield">
+                      <input id="No" type="radio" name="Disability" value="No" data-name="Disability?" required="required" data-ix="disability-no" class="w-radio-input">
+                      <label for="No" data-ix="disability-no" class="w-form-label">No</label>
+                    </div>
+                    <div class="w-radio disabilitybuttonfield">
+                      <input id="Yes" type="radio" name="Disability" value="Yes" data-name="Disability?" required="required" data-ix="disability-yes" class="w-radio-input">
+                      <label for="Yes" data-ix="disability-yes" class="w-form-label">Yes</label>
+                    </div>
+                  </form>
+                  <div class="w-form-done">
+                    <p>Thank you! Your submission has been received!</p>
+                  </div>
+                  <div class="w-form-fail">
+                    <p>Oops! Something went wrong while submitting the form</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-col w-col-6 w-col-small-6 column1">
+              <div class="activityboxes">
+                <div class="activtyboxtext">Workout per day</div>
+                <div class="w-form">
+                  <form id="wf-form-Work-Out-Average-Time" name="wf-form-Work-Out-Average-Time" data-name="Work Out Average Time" action="#">
+                    <select id="Work-Out-Average-Time" name="Work-Out-Average-Time" data-name="Work Out Average Time" required="required" class="w-select selectfield workouttime time">
+                      <option value="">Average Time</option>
+                      <option value="15 min">15 min</option>
+                      <option value="30 min">30 min</option>
+                      <option value="45 min">45 min</option>
+                      <option value="1 hour">1 hour</option>
+                      <option value="1.5 hours">1.5 hours</option>
+                      <option value="2+ hours">2+ hours</option>
+                    </select>
+                  </form>
+                  <div class="w-form-done">
+                    <p>Thank you! Your submission has been received!</p>
+                  </div>
+                  <div class="w-form-fail">
+                    <p>Oops! Something went wrong while submitting the form</p>
+                  </div>
+                </div>
+                <div class="activtyboxtext">Workout per week</div>
+                <div class="w-form">
+                  <form id="wf-form-Work-Out-Average-Days" name="wf-form-Work-Out-Average-Days" data-name="Work Out Average Days" action="#">
+                    <select id="Work-Out-Average-Days" name="Work-Out-Average-Days" data-name="Work Out Average Days" required="required" class="w-select selectfield workouttime days">
+                      <option value="">Average Days</option>
+                      <option value="1 - 2 days">1 - 2 days</option>
+                      <option value="2- 3 days">2- 3 days</option>
+                      <option value="4 - 5 days">4 - 5 days</option>
+                      <option value="5 - 6 days">5 - 6 days</option>
+                      <option value="6 - 7 days">6 - 7 days</option>
+                    </select>
+                  </form>
+                  <div class="w-form-done">
+                    <p>Thank you! Your submission has been received!</p>
+                  </div>
+                  <div class="w-form-fail">
+                    <p>Oops! Something went wrong while submitting the form</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="explaindisability">
+          <div data-ix="display-none-on-load" class="descbox">
+            <div class="activtyboxtext disabilitydesctext">Are you able to lift?&nbsp;</div>
+            <div class="w-form">
+              <form id="email-form-3" name="email-form-3" data-name="Email Form 3" data-redirect="http://Are you able to lift?" action="javascript(0)">
+                <textarea id="Disability-Explanation" placeholder="Explain your disability." name="Disability-Explanation" data-name="Disability Explanation" required="required" class="w-input descriptionfield"></textarea>
+              </form>
+              <div class="w-form-done">
+                <p>Thank you! Your submission has been received!</p>
+              </div>
+              <div class="w-form-fail">
+                <p>Oops! Something went wrong while submitting the form</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-row buttonrow">
+          <div class="w-col w-col-6 w-col-small-6 w-hidden-tiny"></div>
+          <div class="w-col w-col-6 w-col-small-6 w-clearfix buttoncolumn byspcont"><a href="health-goals-interest.html" class="w-button continuebuttons createaccfield byspbutton bysp">Continue</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

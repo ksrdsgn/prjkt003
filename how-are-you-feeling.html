@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Wed May 11 2016 20:40:10 GMT+0000 (UTC) -->
+<html data-wf-site="5625bbac5b5a72607dba538b" data-wf-page="5716efa456957c433287f91c">
+<head>
+  <meta charset="utf-8">
+  <title>How are you feeling?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/seek-community.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon-01.png">
+  <link rel="apple-touch-icon" href="images/Webclip-01.png">
+  <script type="text/javascript">
+    $('input[type="range"]').on('mouseup', function() {
+      this.blur();
+    }).on('mousedown input', function() {
+      styl.inject('input[type=range]:focus::-webkit-slider-thumb:after, input[type=range]:focus::-ms-thumb:after, input[type=range]:focus::-moz-range-thumb:after', {
+        content: "'" + this.value + "'"
+      }).apply();
+    });
+  </script>
+</head>
+<body class="communitybg">
+  <div data-ix="load" class="w-section">
+    <div class="w-container">
+      <div class="communitybox createaccbox byspbox">
+        <div>
+          <div class="boxheader">
+            <h1 class="boxtitle">How are you feeling, Name?</h1>
+            <div class="boxdesc">Just checking in after your last visit.</div>
+          </div>
+        </div>
+        <div class="insidecontainer">
+          <div class="textblock">We hope the medication we suggested helped! If you don’t mind answering a few questions so we can help others feel better we would greatly appreciate it!</div>
+        </div>
+        <div class="insidecontainer">
+          <div class="w-form">
+            <form id="wf-form-How-are-you-feeling" name="wf-form-How-are-you-feeling" data-name="How are you feeling" action="javascript:void(0);">
+              <label for="How-long-were-you-sick-for" class="fieldlabel">How long were you sick for?</label>
+              <textarea id="How-long-were-you-sick-for" placeholder="1-2 weeks, etc" name="How-long-were-you-sick-for" data-name="How long were you sick for?" required="required" class="w-input textfield"></textarea>
+              <label for="What-seemed-to-help-the-most" class="fieldlabel">What seemed to help the most?</label>
+              <textarea id="What-seemed-to-help-the-most" placeholder="Rest, Medicines, etc" name="What-seemed-to-help-the-most" data-name="What seemed to help the most?" class="w-input textfield"></textarea>
+              <label for="Explain-Symptoms" class="fieldlabel">Can you describe your symptoms you had?</label>
+              <textarea id="Explain-Symptoms" placeholder="Headache, Nausea, etc" name="Explain-Symptoms" data-name="Explain Symptoms" required="required" class="w-input textfield"></textarea>
+            </form>
+            <div class="w-form-done">
+              <p>Thank you! Your submission has been received!</p>
+            </div>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-row buttonrow">
+          <div class="w-col w-col-6 w-col-small-6"></div>
+          <div class="w-col w-col-6 w-col-small-6"><a href="home.html" class="w-button continuebuttons createaccfield pricingbutton">Thanks!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

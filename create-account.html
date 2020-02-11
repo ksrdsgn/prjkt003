@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Wed May 11 2016 20:40:09 GMT+0000 (UTC) -->
+<html data-wf-site="5625bbac5b5a72607dba538b" data-wf-page="5716efa456957c433287f911">
+<head>
+  <meta charset="utf-8">
+  <title>Create Account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/seek-community.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon-01.png">
+  <link rel="apple-touch-icon" href="images/Webclip-01.png">
+  <script type="text/javascript">
+    $('input[type="range"]').on('mouseup', function() {
+      this.blur();
+    }).on('mousedown input', function() {
+      styl.inject('input[type=range]:focus::-webkit-slider-thumb:after, input[type=range]:focus::-ms-thumb:after, input[type=range]:focus::-moz-range-thumb:after', {
+        content: "'" + this.value + "'"
+      }).apply();
+    });
+  </script>
+</head>
+<body class="communitybg">
+  <div data-ix="load" class="w-section">
+    <div class="w-container">
+      <div class="communitybox createaccbox">
+        <div>
+          <div class="boxheader">
+            <h1 class="boxtitle">Create Account</h1>
+            <div class="boxdesc">Fill out information below.</div>
+          </div>
+        </div>
+        <div class="w-form">
+          <form id="wf-form-Create-account" name="wf-form-Create-account" data-name="Create account" action="javascript:void(0);">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <input id="First-Name" type="text" placeholder="First Name" name="First-Name" data-name="First Name" required="required" class="w-input loginfields createaccfields">
+                <input id="Last-Name-6" type="text" placeholder="Last Name" name="Last-Name" data-name="Last Name" required="required" class="w-input loginfields createaccfields">
+                <input id="Username" type="text" placeholder="Username" name="Username" data-name="Username" required="required" class="w-input loginfields createaccfields">
+                <input id="Email" type="email" placeholder="Email" name="Email" data-name="Email" required="required" class="w-input loginfields createaccfields">
+                <input id="Phone-Number" type="text" placeholder="Phone Number" name="Phone-Number" data-name="Phone Number" required="required" class="w-input loginfields createaccfields">
+                <select id="Trainer-2" name="Trainer" data-name="Trainer" required="required" data-ix="display-none-on-load" class="w-select trainertype">
+                  <option value="">What kind of trainer?</option>
+                  <option value="First Choice">First Choice</option>
+                  <option value="Second Choice">Second Choice</option>
+                  <option value="Third Choice">Third Choice</option>
+                </select>
+              </div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <select id="Gender" name="Gender" data-name="Gender" required="required" class="w-select selectfield rtcol">
+                  <option value="">Gender</option>
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                  <option value="Other">Other</option>
+                </select>
+                <input id="Birthday" type="text" placeholder="Birthday (MM/DD/YY)" name="Birthday" data-name="Birthday" required="required" class="w-input loginfields createaccfields rtcol">
+                <input id="Create-Password" type="password" placeholder="Create Password" name="Create-Password" data-name="Create Password" required="required" class="w-input loginfields createaccfields rtcol">
+                <input id="Confirm-Password" type="password" placeholder="Confirm Password" name="Confirm-Password" data-name="Confirm Password" required="required" class="w-input loginfields createaccfields rtcol">
+                <div class="trainerq">
+                  <div class="w-row areyouatrainerrow">
+                    <div class="w-col w-col-7 w-col-small-7">
+                      <div>Are you a trainer?</div>
+                    </div>
+                    <div class="w-col w-col-3 w-col-small-3">
+                      <div class="w-radio w-clearfix">
+                        <input id="Yes" type="radio" name="Are-you-a-trainer" value="Yes" data-name="Are you a trainer?" required="required" data-ix="are-you-a-trainer-yes" class="w-radio-input">
+                        <label for="Yes" data-ix="are-you-a-trainer-yes" class="w-form-label">Yes</label>
+                      </div>
+                    </div>
+                    <div class="w-col w-col-2 w-col-small-2">
+                      <div class="w-radio w-clearfix">
+                        <input id="No" type="radio" name="Are-you-a-trainer" value="No" data-name="Are you a trainer?" required="required" data-ix="are-you-a-trainer-no" class="w-radio-input">
+                        <label for="No" data-ix="are-you-a-trainer-no" class="w-form-label">No</label>
+                      </div>
+                    </div>
+                  </div>
+                </div><a href="build-your-self-profile.html" class="w-button continuebuttons createaccfield">Create Account</a><a href="trainer-setup.html" data-ix="display-none-on-load" class="w-button continuebutton">Continue</a>
+              </div>
+            </div>
+          </form>
+          <div class="w-form-done">
+            <p>Thank you! Your submission has been received!</p>
+          </div>
+          <div class="w-form-fail">
+            <p>Oops! Something went wrong while submitting the form</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>

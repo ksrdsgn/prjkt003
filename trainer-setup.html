@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Wed May 11 2016 20:40:09 GMT+0000 (UTC) -->
+<html data-wf-site="5625bbac5b5a72607dba538b" data-wf-page="5716efa456957c433287f90c">
+<head>
+  <meta charset="utf-8">
+  <title>Training Setup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/seek-community.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon-01.png">
+  <link rel="apple-touch-icon" href="images/Webclip-01.png">
+  <script type="text/javascript">
+    $('input[type="range"]').on('mouseup', function() {
+      this.blur();
+    }).on('mousedown input', function() {
+      styl.inject('input[type=range]:focus::-webkit-slider-thumb:after, input[type=range]:focus::-ms-thumb:after, input[type=range]:focus::-moz-range-thumb:after', {
+        content: "'" + this.value + "'"
+      }).apply();
+    });
+  </script>
+</head>
+<body class="communitybg">
+  <div data-ix="load" class="w-section">
+    <div class="w-container">
+      <div class="communitybox createaccbox byspbox trainingsetup">
+        <div>
+          <div class="boxheader">
+            <h1 class="boxtitle">Trainer Setup</h1>
+            <div class="boxdesc">Information below will be displayed on your profile.</div>
+          </div>
+        </div>
+        <div class="w-form trainingsetupwrapper">
+          <form id="wf-form-training-setup" name="wf-form-training-setup" data-name="training setup" action="javascript:void(0);">
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="descbox uploadphotobox">
+                  <div class="activtyboxtext uploadphototxt">Upload Photo</div>
+                  <div class="uploadpicbox"><a href="#" class="w-button continuebuttons browsebtn">Browse</a>
+                  </div>
+                </div>
+                <input id="Gym-Affiliation" type="text" placeholder="Gym Affiliation " name="Gym-Affiliation" required="required" data-name="Gym Affiliation" class="w-input selectfield gymaffiliation">
+              </div>
+              <div class="w-col w-col-6">
+                <select id="Trainer-Specialty" name="Trainer-Specialty" data-name="Trainer Specialty" required="required" class="w-select selectfield trainerspecialtydd">
+                  <option value="">Specialty</option>
+                  <option value="First">First Choice</option>
+                  <option value="Second">Second Choice</option>
+                  <option value="Third">Third Choice</option>
+                </select>
+                <div class="descbox specialtybox describebox">
+                  <div class="activtyboxtext specialtytext">Describe:</div>
+                  <div class="w-form">
+                    <form id="wf-form-Describe-Specialty" name="wf-form-Describe-Specialty" data-name="Describe Specialty" action="javascript(0)">
+                      <textarea id="Describe-Specialty" placeholder="Describe your specialty" name="Describe-Specialty" data-name="Describe Specialty" required="required" class="w-input descriptionfield"></textarea>
+                    </form>
+                    <div class="w-form-done">
+                      <p>Thank you! Your submission has been received!</p>
+                    </div>
+                    <div class="w-form-fail">
+                      <p>Oops! Something went wrong while submitting the form</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="w-form-done">
+            <p>Thank you! Your submission has been received!</p>
+          </div>
+          <div class="w-form-fail">
+            <p>Oops! Something went wrong while submitting the form</p>
+          </div>
+        </div>
+        <div class="uploadcontainer">
+          <div class="w-row">
+            <div class="w-col w-col-6">
+              <div class="w-clearfix descbox specialtybox uploadbox">
+                <div class="activtyboxtext uploadboxtxt">Upload Certificates</div>
+                <div class="uploadtxtblock">Seek requires our trainers to upload their certifications to for ensure legitimacy to show our users.</div><a href="#" class="w-button continuebuttons browsebtn uploadbrowsebtn">Browse</a>
+              </div>
+            </div>
+            <div class="w-col w-col-6">
+              <div class="w-clearfix descbox specialtybox uploadboxrt">
+                <div class="activtyboxtext uploadboxtxt">Upload Workouts</div>
+                <div class="uploadtxtblock">We recommend having a free demo workout, and splitting levels for beginners, experienced, and advanced users.</div><a href="#" class="w-button continuebuttons browsebtn uploadbrowsebtn">Browse</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="workoutboxcontainer">
+          <div data-duration-in="300" data-duration-out="100" data-easing="ease-in-out" class="w-tabs">
+            <div class="w-tab-menu setuptabmenu"><img width="30" src="images/tabarrowLEFT_ltgrey_48px.svg" class="tabltarw">
+              <a data-w-tab="Tab 1" class="w-tab-link w--current w-inline-block setuptab">
+                <div>Demo</div>
+              </a>
+              <a data-w-tab="Tab 2" class="w-tab-link w-inline-block setuptab">
+                <div>Beginner</div>
+              </a>
+              <a data-w-tab="Tab 3" class="w-tab-link w-inline-block setuptab">
+                <div>Experienced</div>
+              </a>
+              <a data-w-tab="Tab 4" class="w-tab-link w-inline-block setuptab">
+                <div>Advanced</div>
+              </a><img width="30" src="images/tabarrowRIGHT_ltgrey_48px.svg" class="tabrtarw">
+            </div>
+            <div class="w-tab-content">
+              <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+                <div class="descbox summarypreviewbox">
+                  <div class="w-row">
+                    <div class="w-col w-col-6 w-col-stack">
+                      <div class="activtyboxtext workoutboxtxt">Brief Summary of Workout(s):</div>
+                      <div class="w-form">
+                        <form id="wf-form-brief-summary-of-workouts" name="wf-form-brief-summary-of-workouts" data-name="brief summary of workouts" action="javascript:void(0);" class="w-clearfix">
+                          <textarea id="Workout-Summary-2" placeholder="Summarize workout..." name="Workout-Summary-2" data-name="Workout Summary 2" required="required" class="w-input descriptionfield briefworkoutsummary"></textarea>
+                        </form>
+                        <div class="w-form-done">
+                          <p>Thank you! Your submission has been received!</p>
+                        </div>
+                        <div class="w-form-fail">
+                          <p>Oops! Something went wrong while submitting the form</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-col w-col-6 w-col-stack">
+                      <div class="activtyboxtext workoutboxtxt">Set 'Preview' Workout</div>
+                      <div class="w-form">
+                        <form id="wf-form-set-preview-workout" name="wf-form-set-preview-workout" data-name="set preview workout" action="javascript:void(0);">
+                          <textarea id="Set-Preview-2" name="Set-Preview-2" data-name="Set Preview 2" required="required" class="w-input descriptionfield workoutpreviewbox"></textarea>
+                        </form>
+                        <div class="w-form-done">
+                          <p>Thank you! Your submission has been received!</p>
+                        </div>
+                        <div class="w-form-fail">
+                          <p>Oops! Something went wrong while submitting the form</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-form">
+                    <form id="wf-form-Health-Goals-Filter" name="wf-form-Health-Goals-Filter" data-name="Health Goals Filter" class="w-clearfix radiobuttonform">
+                      <div class="activtyboxtext uploadboxtxt healthgoalscategorytext">Set Category:</div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Weight" type="checkbox" name="Weight" data-name="Weight" class="w-checkbox-input">
+                        <label for="Weight" class="w-form-label bottomtextblock">Weight</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Flexibility" type="checkbox" name="Flexibility" data-name="Flexibility" class="w-checkbox-input">
+                        <label for="Flexibility" class="w-form-label bottomtextblock">Flexibility</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Endurance" type="checkbox" name="Endurance" data-name="Endurance" class="w-checkbox-input">
+                        <label for="Endurance" class="w-form-label bottomtextblock">Endurance</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Strength" type="checkbox" name="Strength" data-name="Strength" class="w-checkbox-input">
+                        <label for="Strength" class="w-form-label bottomtextblock">Strength</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Destress" type="checkbox" name="Destress" data-name="Destress" class="w-checkbox-input">
+                        <label for="Destress" class="w-form-label bottomtextblock">Destress</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Rehab" type="checkbox" name="Rehab" data-name="Rehab" class="w-checkbox-input">
+                        <label for="Rehab" class="w-form-label bottomtextblock">Rehab</label>
+                      </div>
+                    </form>
+                    <div class="w-form-done">
+                      <p>Thank you! Your submission has been received!</p>
+                    </div>
+                    <div class="w-form-fail">
+                      <p>Oops! Something went wrong while submitting the form</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-tab="Tab 2" class="w-tab-pane">
+                <div class="descbox summarypreviewbox">
+                  <div class="w-row">
+                    <div class="w-col w-col-6 w-col-stack">
+                      <div class="activtyboxtext workoutboxtxt">Brief Summary of Workout(s):</div>
+                      <div class="w-form">
+                        <form id="wf-form-brief-summary-of-workouts" name="wf-form-brief-summary-of-workouts" data-name="brief summary of workouts" action="javascript:void(0);" class="w-clearfix">
+                          <textarea id="Workout-Summary-3" placeholder="Summarize workout..." name="Workout-Summary-3" data-name="Workout Summary 3" required="required" class="w-input descriptionfield briefworkoutsummary"></textarea>
+                        </form>
+                        <div class="w-form-done">
+                          <p>Thank you! Your submission has been received!</p>
+                        </div>
+                        <div class="w-form-fail">
+                          <p>Oops! Something went wrong while submitting the form</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-col w-col-6 w-col-stack">
+                      <div class="activtyboxtext workoutboxtxt">Set 'Preview' Workout</div>
+                      <div class="w-form">
+                        <form id="wf-form-set-preview-workout" name="wf-form-set-preview-workout" data-name="set preview workout" action="javascript:void(0);">
+                          <textarea id="Set-Preview-3" name="Set-Preview-3" data-name="Set Preview 3" required="required" class="w-input descriptionfield workoutpreviewbox"></textarea>
+                        </form>
+                        <div class="w-form-done">
+                          <p>Thank you! Your submission has been received!</p>
+                        </div>
+                        <div class="w-form-fail">
+                          <p>Oops! Something went wrong while submitting the form</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-form">
+                    <form id="wf-form-Health-Goals-Filter" name="wf-form-Health-Goals-Filter" data-name="Health Goals Filter" class="w-clearfix radiobuttonform">
+                      <div class="activtyboxtext uploadboxtxt healthgoalscategorytext">Set Category:</div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Weight-5" type="checkbox" name="Weight" data-name="Weight" class="w-checkbox-input">
+                        <label for="Weight-5" class="w-form-label bottomtextblock">Weight</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Flexibility-5" type="checkbox" name="Flexibility" data-name="Flexibility" class="w-checkbox-input">
+                        <label for="Flexibility-5" class="w-form-label bottomtextblock">Flexibility</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Endurance-5" type="checkbox" name="Endurance" data-name="Endurance" class="w-checkbox-input">
+                        <label for="Endurance-5" class="w-form-label bottomtextblock">Endurance</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Strength-5" type="checkbox" name="Strength" data-name="Strength" class="w-checkbox-input">
+                        <label for="Strength-5" class="w-form-label bottomtextblock">Strength</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Destress-5" type="checkbox" name="Destress" data-name="Destress" class="w-checkbox-input">
+                        <label for="Destress-5" class="w-form-label bottomtextblock">Destress</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Rehab-5" type="checkbox" name="Rehab" data-name="Rehab" class="w-checkbox-input">
+                        <label for="Rehab-5" class="w-form-label bottomtextblock">Rehab</label>
+                      </div>
+                    </form>
+                    <div class="w-form-done">
+                      <p>Thank you! Your submission has been received!</p>
+                    </div>
+                    <div class="w-form-fail">
+                      <p>Oops! Something went wrong while submitting the form</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-tab="Tab 3" class="w-tab-pane">
+                <div class="descbox summarypreviewbox">
+                  <div class="w-row">
+                    <div class="w-col w-col-6 w-col-stack">
+                      <div class="activtyboxtext workoutboxtxt">Brief Summary of Workout(s):</div>
+                      <div class="w-form">
+                        <form id="wf-form-brief-summary-of-workouts" name="wf-form-brief-summary-of-workouts" data-name="brief summary of workouts" action="javascript:void(0);" class="w-clearfix">
+                          <textarea id="Workout-Summary-4" placeholder="Summarize workout..." name="Workout-Summary-4" data-name="Workout Summary 4" required="required" class="w-input descriptionfield briefworkoutsummary"></textarea>
+                        </form>
+                        <div class="w-form-done">
+                          <p>Thank you! Your submission has been received!</p>
+                        </div>
+                        <div class="w-form-fail">
+                          <p>Oops! Something went wrong while submitting the form</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-col w-col-6 w-col-stack">
+                      <div class="activtyboxtext workoutboxtxt">Set 'Preview' Workout</div>
+                      <div class="w-form">
+                        <form id="wf-form-set-preview-workout" name="wf-form-set-preview-workout" data-name="set preview workout" action="javascript:void(0);">
+                          <textarea id="Set-Preview-4" name="Set-Preview-4" data-name="Set Preview 4" required="required" class="w-input descriptionfield workoutpreviewbox"></textarea>
+                        </form>
+                        <div class="w-form-done">
+                          <p>Thank you! Your submission has been received!</p>
+                        </div>
+                        <div class="w-form-fail">
+                          <p>Oops! Something went wrong while submitting the form</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-form">
+                    <form id="wf-form-Health-Goals-Filter" name="wf-form-Health-Goals-Filter" data-name="Health Goals Filter" class="w-clearfix radiobuttonform">
+                      <div class="activtyboxtext uploadboxtxt healthgoalscategorytext">Set Category:</div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Weight-6" type="checkbox" name="Weight" data-name="Weight" class="w-checkbox-input">
+                        <label for="Weight-6" class="w-form-label bottomtextblock">Weight</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Flexibility-6" type="checkbox" name="Flexibility" data-name="Flexibility" class="w-checkbox-input">
+                        <label for="Flexibility-6" class="w-form-label bottomtextblock">Flexibility</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Endurance-6" type="checkbox" name="Endurance" data-name="Endurance" class="w-checkbox-input">
+                        <label for="Endurance-6" class="w-form-label bottomtextblock">Endurance</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Strength-6" type="checkbox" name="Strength" data-name="Strength" class="w-checkbox-input">
+                        <label for="Strength-6" class="w-form-label bottomtextblock">Strength</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Destress-6" type="checkbox" name="Destress" data-name="Destress" class="w-checkbox-input">
+                        <label for="Destress-6" class="w-form-label bottomtextblock">Destress</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Rehab-6" type="checkbox" name="Rehab" data-name="Rehab" class="w-checkbox-input">
+                        <label for="Rehab-6" class="w-form-label bottomtextblock">Rehab</label>
+                      </div>
+                    </form>
+                    <div class="w-form-done">
+                      <p>Thank you! Your submission has been received!</p>
+                    </div>
+                    <div class="w-form-fail">
+                      <p>Oops! Something went wrong while submitting the form</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-tab="Tab 4" class="w-tab-pane">
+                <div class="descbox summarypreviewbox">
+                  <div class="w-row">
+                    <div class="w-col w-col-6 w-col-stack">
+                      <div class="activtyboxtext workoutboxtxt">Brief Summary of Workout(s):</div>
+                      <div class="w-form">
+                        <form id="wf-form-brief-summary-of-workouts" name="wf-form-brief-summary-of-workouts" data-name="brief summary of workouts" action="javascript:void(0);" class="w-clearfix">
+                          <textarea id="Workout-Summary-5" placeholder="Summarize workout..." name="Workout-Summary-5" data-name="Workout Summary 5" required="required" class="w-input descriptionfield briefworkoutsummary"></textarea>
+                        </form>
+                        <div class="w-form-done">
+                          <p>Thank you! Your submission has been received!</p>
+                        </div>
+                        <div class="w-form-fail">
+                          <p>Oops! Something went wrong while submitting the form</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-col w-col-6 w-col-stack">
+                      <div class="activtyboxtext workoutboxtxt">Set 'Preview' Workout</div>
+                      <div class="w-form">
+                        <form id="wf-form-set-preview-workout" name="wf-form-set-preview-workout" data-name="set preview workout" action="javascript:void(0);">
+                          <textarea id="Set-Preview-5" name="Set-Preview-5" data-name="Set Preview 5" required="required" class="w-input descriptionfield workoutpreviewbox"></textarea>
+                        </form>
+                        <div class="w-form-done">
+                          <p>Thank you! Your submission has been received!</p>
+                        </div>
+                        <div class="w-form-fail">
+                          <p>Oops! Something went wrong while submitting the form</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-form">
+                    <form id="wf-form-Health-Goals-Filter" name="wf-form-Health-Goals-Filter" data-name="Health Goals Filter" class="w-clearfix radiobuttonform">
+                      <div class="activtyboxtext uploadboxtxt healthgoalscategorytext">Set Category:</div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Weight-7" type="checkbox" name="Weight" data-name="Weight" class="w-checkbox-input">
+                        <label for="Weight-7" class="w-form-label bottomtextblock">Weight</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Flexibility-7" type="checkbox" name="Flexibility" data-name="Flexibility" class="w-checkbox-input">
+                        <label for="Flexibility-7" class="w-form-label bottomtextblock">Flexibility</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Endurance-7" type="checkbox" name="Endurance" data-name="Endurance" class="w-checkbox-input">
+                        <label for="Endurance-7" class="w-form-label bottomtextblock">Endurance</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Strength-7" type="checkbox" name="Strength" data-name="Strength" class="w-checkbox-input">
+                        <label for="Strength-7" class="w-form-label bottomtextblock">Strength</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Destress-7" type="checkbox" name="Destress" data-name="Destress" class="w-checkbox-input">
+                        <label for="Destress-7" class="w-form-label bottomtextblock">Destress</label>
+                      </div>
+                      <div class="w-checkbox w-clearfix healthgoalsfilterbutton">
+                        <input id="Rehab-7" type="checkbox" name="Rehab" data-name="Rehab" class="w-checkbox-input">
+                        <label for="Rehab-7" class="w-form-label bottomtextblock">Rehab</label>
+                      </div>
+                    </form>
+                    <div class="w-form-done">
+                      <p>Thank you! Your submission has been received!</p>
+                    </div>
+                    <div class="w-form-fail">
+                      <p>Oops! Something went wrong while submitting the form</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottomtextblock text">Seek requires a full workout plan to be submitted by all trainers for all categories to ensure legitimacy.</div>
+        <div class="w-row buttonrow">
+          <div class="w-col w-col-6 w-col-small-6"></div>
+          <div class="w-col w-col-6 w-col-small-6 w-clearfix"><a href="pricing-setup.html" class="w-button continuebuttons createaccfield byspbutton">Continue</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>
