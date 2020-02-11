@@ -1,0 +1,5549 @@
+body {
+  height: 100%;
+  background-color: #e2e2e2;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  margin: 0px auto 10px;
+  padding-top: 0px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  line-height: 44px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 0px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+a {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: #0ab243;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.navbar {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 5;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.navbar.train {
+  z-index: 2;
+}
+
+.navbar.train.workouts {
+  display: none;
+}
+
+.logo {
+  position: relative;
+  margin-top: 0px;
+  margin-left: 30px;
+  padding-top: 0px;
+}
+
+.navmenu {
+  display: block;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.navmenu.key {
+  display: none;
+}
+
+.navlink {
+  display: inline-block;
+  margin-top: 0px;
+  font-family: Montserrat, sans-serif;
+  color: #565656;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.navlink.trainerprofilelinks {
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.navlink.trainerprofilelinks:hover {
+  -webkit-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
+}
+
+.navlink.trainerprofilelinks.user:hover {
+  color: #0ab243;
+}
+
+.navlink.trainerprofilelinks.user.trainlink:hover {
+  color: #0e7698;
+}
+
+.navlink.trainerprofilelinks.user.trainlink.home {
+  color: #565656;
+}
+
+.navlink.trainerprofilelinks.user.trainlink.home:hover {
+  color: #565656;
+}
+
+.navlink.train {
+  color: #0e7698;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.navlink.learn {
+  letter-spacing: 0.5px;
+}
+
+.navlink.connect {
+  letter-spacing: 0.5px;
+}
+
+.navlink.menudropdown {
+  margin-top: -16px;
+  padding-right: 20px;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.navlink.menudropdown:hover {
+  -webkit-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
+  color: #0ab243;
+}
+
+.navlink.menudropdown.user.trainlink:hover {
+  color: #0e7698;
+}
+
+.navlink.menudropdown.user.trainlink.settingsdd {
+  position: fixed;
+  left: auto;
+  margin-top: -31px;
+  color: transparent;
+}
+
+.navlink.menudropdown.user.trainlink.learnlink:hover {
+  color: #f3320e;
+}
+
+.navlink.menudropdown.user.trainlink.connectlink:hover {
+  color: #f3840e;
+}
+
+.navlink.menudropdown.trainpage {
+  color: #0e7698;
+}
+
+.navlink.menudropdown.trainlink:hover {
+  color: #0e7698;
+}
+
+.navlink.menudropdown.learnlink:hover {
+  color: #f3320e;
+}
+
+.navlink.menudropdown.connectlink:hover {
+  color: #f3840e;
+}
+
+.navlink.home {
+  color: #231f20;
+}
+
+.navlink.home.w--current {
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+  color: #565656;
+}
+
+.navlink.home.w--current:hover {
+  -webkit-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
+}
+
+.textfield {
+  width: 96%;
+  font-family: Lato, sans-serif;
+  color: #868686;
+  font-size: 12px;
+}
+
+.textfield.forgotpwtxtfield {
+  width: 240px;
+  border-radius: 4px;
+}
+
+.communitybg {
+  background-color: #e2e2e2;
+  background-image: url('../images/CommunityBG-01.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.communitybox {
+  position: static;
+  display: block;
+  width: 415px;
+  height: 230px;
+  margin-top: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0px;
+  border-style: none;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .8);
+  box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, .4);
+}
+
+.communitybox.createaccbox {
+  width: 600px;
+  height: auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding-bottom: 40px;
+  border-top: 10px solid #0ab243;
+  border-radius: 4px;
+  background-color: #9c9c9c;
+  box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, .4);
+}
+
+.communitybox.createaccbox.byspbox {
+  height: auto;
+}
+
+.communitybox.createaccbox.byspbox.trainingsetup {
+  width: 74%;
+}
+
+.communitybox.createaccbox.symptomsbox {
+  width: 50%;
+  margin-top: 22%;
+  margin-bottom: 22%;
+  padding-bottom: 35px;
+  border-top-width: 10px;
+  border-top-color: #f3320e;
+}
+
+.communitybox.createaccbox.forgotpwbox {
+  padding-bottom: 35px;
+}
+
+.communitybox.createaccbox.purchasewaiver {
+  border-top-color: #4b9bb6;
+}
+
+.communitybox.createaccbox.detailedactivity {
+  width: 800px;
+  background-color: hsla(0, 0%, 89%, .89);
+}
+
+.communitybox.createaccbox.dietbox {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.loginheader {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  padding-top: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.loginfields {
+  display: block;
+  width: 300px;
+  height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 4px;
+  background-image: url('../images/lock_grey_48px.svg');
+  background-position: 1% 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  font-family: Lato, sans-serif;
+  color: #868686;
+  font-size: 12px;
+  text-indent: 15px;
+}
+
+.loginfields.createaccfields {
+  width: 200px;
+  height: 40px;
+  margin-top: 35px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  padding-left: 0px;
+  background-image: none;
+}
+
+.loginfields.createaccfields.rtcol {
+  margin-left: 51px;
+}
+
+.loginfields.createaccfields.rtcol.byspfields {
+  width: 69%;
+}
+
+.loginfields.email {
+  background-image: url('../images/email_grey_48px.svg');
+  background-position: 5px 50%;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.rmbrme {
+  padding-right: 80px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 10px;
+  text-align: right;
+  letter-spacing: 0.5px;
+}
+
+.rmbrme.forgotpw {
+  padding-right: 0px;
+  padding-left: 57px;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.continuebuttons {
+  margin-top: 4px;
+  margin-left: 54px;
+  padding: 5px 20px;
+  border-radius: 4px;
+  background-color: #f3840e;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.continuebuttons.loginbtn {
+  margin-top: 2px;
+  margin-right: 0px;
+  margin-left: 4px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 4px;
+  background-color: #0ab243;
+}
+
+.continuebuttons.createaccfield {
+  width: 49%;
+  height: 40px;
+  margin-top: 35px;
+  margin-left: 110px;
+  padding-top: 10px;
+  padding-left: 20px;
+  background-color: #0ab243;
+}
+
+.continuebuttons.createaccfield.byspbutton {
+  display: block;
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  float: right;
+  background-color: #0ab243;
+  text-align: center;
+}
+
+.continuebuttons.createaccfield.byspbutton.healthgoals {
+  width: 49%;
+  margin-left: auto;
+}
+
+.continuebuttons.createaccfield.byspbutton.bysp {
+  width: 49%;
+  float: right;
+}
+
+.continuebuttons.createaccfield.pricingbutton {
+  position: relative;
+  margin-top: 35px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #0ab243;
+}
+
+.continuebuttons.browsebtn {
+  display: inline-block;
+  margin-top: 85px;
+  margin-right: auto;
+  margin-left: 15px;
+  background-color: #0ab243;
+}
+
+.continuebuttons.browsebtn.uploadbrowsebtn {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: right;
+}
+
+.continuebuttons.symptomsbutton {
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  float: right;
+  background-color: #0ab243;
+}
+
+.continuebuttons.forgotpwbtn {
+  margin-left: 0px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.continuebuttons.forgotpwbtn.sendcode {
+  width: 96%;
+  background-color: #f3320e;
+}
+
+.continuebuttons.forgotpwbtn.forgotpwcontbtn {
+  width: 96%;
+  background-color: #0ab243;
+}
+
+.continuebuttons.forgotpwbtn.forgotpwcontbtn.savebtn {
+  display: block;
+  width: 46%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.continuebuttons.trainerprofilebutton {
+  display: block;
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #0ab243;
+}
+
+.continuebuttons.trainerprofilebutton.editprofile {
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  display: block;
+  width: 150px;
+  border: 1px solid #565656;
+  background-color: transparent;
+  color: #565656;
+}
+
+.boxheader {
+  display: block;
+  padding-top: 0px;
+  padding-left: 0px;
+  border-style: none;
+  background-color: #565656;
+}
+
+.boxtitle {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-left: 40px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-indent: 0px;
+  text-transform: none;
+}
+
+.boxdesc {
+  margin-top: -5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-indent: 0px;
+}
+
+.boxdesc.hginterest {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.selectfield {
+  width: 200px;
+  height: 40px;
+  margin-top: 35px;
+  margin-left: 40px;
+  border-radius: 4px;
+  font-family: Lato, sans-serif;
+  color: #868686;
+  font-size: 12px;
+}
+
+.selectfield.rtcol {
+  margin-right: 0px;
+  margin-left: 51px;
+}
+
+.selectfield.trainerspecialtydd {
+  width: 95%;
+  margin-left: 0px;
+  float: right;
+}
+
+.selectfield.gymaffiliation {
+  width: 95%;
+  margin-left: 0px;
+}
+
+.selectfield.symptomsfield {
+  display: block;
+  width: 102%;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+.selectfield.height {
+  display: inline-block;
+  width: 100px;
+}
+
+.selectfield.height.in {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+  width: 33%;
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+
+.selectfield.height.ft {
+  width: 33%;
+  margin-bottom: 0px;
+}
+
+.selectfield.workouttime {
+  display: block;
+  width: 150px;
+  height: 20px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 35px;
+  text-align: center;
+}
+
+.selectfield.workouttime.time {
+  width: 130px;
+  padding-left: 12px;
+}
+
+.selectfield.workouttime.days {
+  width: 130px;
+  padding-left: 12px;
+}
+
+.selectfield.train.trainers {
+  display: block;
+  margin-top: 5px;
+  margin-left: 0px;
+  float: none;
+  border-style: none;
+}
+
+.selectfield.train.trainers.specialty {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  float: right;
+}
+
+.selectfield.train.trainers.location {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  float: right;
+}
+
+.selectfield.train.trainers.location.nutrition {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.selectfield.healthgoalsfilter {
+  display: none;
+  width: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.loginlink {
+  margin-left: -53px;
+  color: #fff;
+}
+
+.trainertype {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin-top: 35px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  border-radius: 4px;
+  font-family: Lato, sans-serif;
+  color: #868686;
+  font-size: 12px;
+}
+
+.profilepic {
+  margin-top: 0px;
+  margin-right: auto;
+}
+
+.profilepiclink {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-left: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.contentheadingh1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.contentheadingh1.trainerprofileheadingh1 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Lato, sans-serif;
+  color: #0e7698;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+}
+
+.contentheadingh1.trainerprofileheadingh1.plan {
+  color: #fff;
+}
+
+.contentheadingh1.trainerprofileheadingh1.userprofile {
+  color: #0ab243;
+}
+
+.contentheadingh1.trainerprofileheadingh2 {
+  margin-bottom: -10px;
+  font-family: Lato, sans-serif;
+  color: #0e7698;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.contentheadingh1.trainerprofileheadingh2.userprofile {
+  color: #0ab243;
+}
+
+.toprow {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contentcolumns {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.contentcolumns.trainerprofilecolumns {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.contentcontainer.trainerprofilecontainer {
+  padding: 50px 40px;
+}
+
+.contentcontainer.diet {
+  margin-top: 50px;
+}
+
+.activitylevel {
+  padding: 10px 40px;
+}
+
+.activityleveltext {
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+.activityicons {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.activityboxes {
+  height: 180px;
+  padding: 20px 10px 5px;
+  border-radius: 6px;
+  background-color: dimgray;
+}
+
+.activtyboxtext {
+  padding: 0px 0px 10px;
+  font-family: Lato, sans-serif;
+  color: #4fcb79;
+  font-weight: 400;
+  text-align: center;
+}
+
+.activtyboxtext.disabilitydesctext {
+  padding-left: 12px;
+  color: #4fcb79;
+  text-align: left;
+}
+
+.activtyboxtext.specialtytext {
+  padding-left: 12px;
+  text-align: left;
+}
+
+.activtyboxtext.uploadphototxt {
+  color: #eae6ff;
+}
+
+.activtyboxtext.uploadboxtxt {
+  padding-bottom: 0px;
+  color: #fff;
+}
+
+.activtyboxtext.workoutboxtxt {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.activityboxforms {
+  display: block;
+  width: 115px;
+  height: 20px;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-left: auto;
+  border-radius: 4px;
+  background-color: #e2e2e2;
+  font-family: Lato, sans-serif;
+  color: #868686;
+  font-size: 12px;
+  text-align: center;
+}
+
+.rememberme {
+  margin-bottom: 0px;
+  margin-left: 30px;
+}
+
+.remembermebox {
+  margin-top: 3px;
+  margin-right: 56px;
+  margin-left: 10px;
+  padding-top: 0px;
+  padding-right: 0px;
+  float: right;
+}
+
+.remebermetext {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-bottom: 0px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.explaindisability {
+  padding: 10px 40px;
+}
+
+.descbox {
+  padding: 20px 10px 10px;
+  border-radius: 6px;
+  background-color: dimgray;
+}
+
+.descbox.specialtybox {
+  width: 83%;
+  height: 200px;
+  margin-top: 35px;
+  margin-left: 10px;
+}
+
+.descbox.specialtybox.uploadbox {
+  width: 95%;
+  height: auto;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.descbox.specialtybox.uploadboxrt {
+  width: 95%;
+  height: auto;
+  margin-top: 0px;
+  float: right;
+}
+
+.descbox.specialtybox.describebox {
+  width: 95%;
+  float: right;
+}
+
+.descbox.specialtybox.describebox.interest {
+  width: 100%;
+}
+
+.descbox.uploadphotobox {
+  width: 95%;
+  height: 200px;
+  margin-top: 35px;
+  margin-left: 0px;
+}
+
+.descbox.summarypreviewbox {
+  margin-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.descriptionfield {
+  height: auto;
+  margin-bottom: auto;
+  padding-bottom: 90px;
+  border-radius: 6px;
+  background-color: #e2e2e2;
+  font-family: Lato, sans-serif;
+  color: #868686;
+  font-size: 14px;
+}
+
+.descriptionfield.workoutpreviewbox {
+  width: 95%;
+  float: right;
+}
+
+.descriptionfield.briefworkoutsummary {
+  width: 95%;
+  float: left;
+}
+
+.activitylevelrow {
+  margin-bottom: 20px;
+}
+
+.healthgoalsrow1 {
+  margin-top: 35px;
+}
+
+.healthgoalsrow1.healthgoalsrow2 {
+  margin-top: 35px;
+}
+
+.healthgoalsbutton {
+  width: 160px;
+  height: 160px;
+  padding: 35px 10px 0px;
+  border-radius: 6px;
+  background-color: dimgray;
+  -webkit-transition: background-color 200ms ease, -webkit-transform 200ms ease;
+  transition: background-color 200ms ease, -webkit-transform 200ms ease;
+  transition: background-color 200ms ease, transform 200ms ease;
+  transition: background-color 200ms ease, transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.healthgoalsbutton:hover {
+  background-color: #0ab243;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.healthgoalsbutton:focus {
+  background-color: #0ab243;
+}
+
+.healthgoalsbutton.suggests {
+  width: auto;
+  background-color: #62a37c;
+}
+
+.healthgoalsbutton.suggests:hover {
+  background-color: #0ab243;
+}
+
+.heatlgoalscontainer {
+  padding: 10px 40px 0px;
+}
+
+.healthgoalsbuttontxt {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.healthgoalsicon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.trainerq {
+  width: 200px;
+  height: 40px;
+  margin-top: 35px;
+  margin-left: 51px;
+  padding: 10px 12px 8px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: Lato, sans-serif;
+  color: #868686;
+  font-size: 12px;
+}
+
+.continuebutton {
+  width: 49%;
+  height: 40px;
+  margin-top: 35px;
+  margin-left: 110px;
+  padding: 10px 0px 5px;
+  border-radius: 4px;
+  background-color: #0ab243;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.continuebutton.key {
+  display: block;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.continuebutton.confirmbutton {
+  display: block;
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.continuebutton.confirmbutton.editbutton {
+  position: relative;
+  left: 40px;
+  top: 18px;
+  width: 20%;
+  height: 20%;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  float: none;
+  border: 1px solid #eae6ff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.continuebutton.confirmbutton.editbutton.basicinfotab {
+  z-index: 9999;
+  border-color: #fff;
+}
+
+.continuebutton.confirmbutton.editbutton.bysptab {
+  z-index: 9999;
+  border-color: #fff;
+}
+
+.continuebutton.confirmbutton.editbutton.hgtab {
+  position: relative;
+  z-index: 9999;
+  border-color: #fff;
+}
+
+.continuebutton.confirmbutton.review {
+  margin-top: 35px;
+}
+
+.continuebutton.waiver {
+  position: relative;
+  right: 40px;
+  width: 30%;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  float: right;
+  text-align: center;
+}
+
+.continuebutton.waiver.purchasewaiver {
+  background-color: #4b9bb6;
+}
+
+.continuebutton.waiver.purchasewaiver.back {
+  left: 40px;
+  right: auto;
+  display: block;
+  width: 20%;
+  float: left;
+}
+
+.continuebutton.waiver.purchasewaiver.detailedactivity {
+  background-color: #0ab243;
+}
+
+.disabilitybuttonfield {
+  display: block;
+  margin-right: auto;
+  margin-left: 45px;
+  padding-left: 56px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.uploadpicbox {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 6px;
+  background-color: #e2e2e2;
+  background-image: url('../images/patient_ltgrey_48px.svg');
+  background-position: 50% -14px;
+  background-size: 160px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  opacity: 1;
+}
+
+.uploadpicbox.review {
+  margin-top: 35px;
+}
+
+.uploadtxtblock {
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.workoutboxcontainer {
+  margin-left: 40px;
+  padding: 10px 40px 10px 0px;
+}
+
+.bottomtextblock {
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.uploadcontainer {
+  margin-top: 25px;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding-right: 0px;
+}
+
+.insidecontainer {
+  margin-top: 35px;
+  margin-bottom: 0px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.pricingtxtblock {
+  margin-bottom: 35px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.pricechartbox {
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+}
+
+.pricechartbox.ts {
+  margin-top: 35px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.pricechartbox.review {
+  margin-top: 35px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.chartheadertxt {
+  background-color: transparent;
+  font-family: Lato, sans-serif;
+  color: #4fcb79;
+  text-align: center;
+}
+
+.headercolumns {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #e2e2e2;
+  background-color: #5b5b5b;
+}
+
+.headercolumns.emptycolumn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-color: #e2e2e2;
+}
+
+.trainingsetupwrapper {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.buttonrow {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 40px;
+}
+
+.buttonrow.symptoms {
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
+.buttonrow.healthgoals {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.setuptab {
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  background-color: dimgray;
+  font-family: Montserrat, sans-serif;
+  color: #4fcb79;
+  font-size: 12px;
+}
+
+.setuptab.w--current {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: Montserrat, sans-serif;
+}
+
+.setuptabmenu {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.tabltarw {
+  padding-top: 5px;
+}
+
+.tabrtarw {
+  padding-top: 5px;
+}
+
+.buttoncolumn {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.contenttype {
+  padding: 20px;
+  border: 1px solid #e2e2e1;
+  background-color: #fff;
+}
+
+.contenttype.pricingtypeboxes {
+  padding-top: 33px;
+  padding-bottom: 40px;
+}
+
+.contenttype.pricingtypeboxes.review {
+  height: 90px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.contenttype.review {
+  height: 90px;
+}
+
+.contenttypetext {
+  font-family: Lato, sans-serif;
+  color: #231f20;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contenttypetextitalize {
+  padding-right: 0px;
+  padding-left: 20px;
+  font-family: Lato, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.contenttypetextitalize.review {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sympdesccontainer {
+  padding: 10px 40px 0px;
+}
+
+.symptomstxtblock {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Lato, sans-serif;
+  color: #fff;
+}
+
+.symptomstxtblock.listdesc {
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  text-indent: 0px;
+}
+
+.symptomstxtblock.listdesc.lesslikely {
+  font-size: 11px;
+}
+
+.symptomstxtblock.listdesc.suggestion {
+  padding-left: 0px;
+  letter-spacing: 0.3px;
+}
+
+.symptomstxtblock.listheading {
+  padding-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+
+.symptomstxtblock.listheading.suggestheading {
+  font-size: 25px;
+  letter-spacing: 0.5px;
+}
+
+.symptomstxtblock.symptomsheader {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+}
+
+.symptomstxtblock.symptomsheader.lesslikely {
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
+.symptomstxtblock.symptomsheader.mostlikely {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
+.symptomstxtblock.symptomsheader.suggestion {
+  color: #b82106;
+  letter-spacing: 0.3px;
+}
+
+.symptomssuggestionbutton {
+  margin-top: 4px;
+  padding: 5px 20px;
+  float: right;
+  border-radius: 4px;
+  background-color: #0ab243;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 12px;
+}
+
+.symptomssuggestionbutton.donebtn {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.redorow {
+  padding-right: 7%;
+  padding-left: 7%;
+}
+
+.continuebuttonrow {
+  padding-right: 7%;
+  padding-left: 7%;
+}
+
+.suggestioncontainer {
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.symptomslink {
+  display: inline-block;
+  border-bottom: 2px solid #f3840e;
+  color: #b82106;
+  text-align: left;
+}
+
+.textblock {
+  font-family: Lato, sans-serif;
+  color: #fff;
+}
+
+.fieldlabel {
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+
+.forgotpwcontainer {
+  padding-top: 35px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.resetpwcontainer {
+  padding-top: 35px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.modal-background {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+  display: none;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.modal-background.wtrophy {
+  display: none;
+}
+
+.modal-background.workoutwaiver {
+  display: none;
+}
+
+.modal-window {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 10px;
+}
+
+.prescribebox {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 45px;
+  padding-bottom: 35px;
+  border-top: 10px solid #f3840e;
+  border-radius: 4px;
+  background-color: #9c9c9c;
+}
+
+.prescribetitle {
+  font-family: Lato, sans-serif;
+  color: #ffb363;
+}
+
+.prescribetxt {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.prescribeimage {
+  margin-bottom: 20px;
+  float: none;
+}
+
+.modal-open-button {
+  padding: 5px 20px;
+  border-radius: 4px;
+  background-color: #f3840e;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 12px;
+}
+
+.trainerbackground {
+  height: 100%;
+  margin-top: 87px;
+  padding-top: 0px;
+  background-color: #e2e2e2;
+}
+
+.trainerbackground.trainerbg {
+  height: auto;
+}
+
+.trainerprofiletext {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: #231f20;
+  font-size: 14px;
+  text-align: center;
+}
+
+.trainerprofiletext.plan {
+  padding-left: 60px;
+  color: #fff;
+  text-align: left;
+}
+
+.trainerprofiletext.trainer {
+  text-align: left;
+}
+
+.trainerprofiletext.user {
+  text-align: left;
+}
+
+.trainerprofiletextblock {
+  margin-bottom: 10px;
+  font-family: Lato, sans-serif;
+  color: #231f20;
+  font-weight: 400;
+}
+
+.trainerprofiletextblock.trainerprofilecontactsection {
+  margin-bottom: 0px;
+}
+
+.trainerprofilecolumn2 {
+  padding-left: 10px;
+}
+
+.profiletrainertabmenu {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 35px;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.trainerprofiletabs {
+  width: 160px;
+  height: 160px;
+  margin-right: 73px;
+  margin-left: 0px;
+  padding: 50px;
+  border-radius: 8px;
+  background-color: #4b9bb6;
+  color: #fff;
+}
+
+.trainerprofiletabs.w--current {
+  width: 160px;
+  height: 160px;
+  margin-right: 73px;
+  margin-left: 0px;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.trainerprofiletabs.tab4 {
+  margin-right: 0px;
+  padding: 30px 0px 0px;
+  background-color: #4b9bb6;
+  -webkit-transition: background-color 200ms ease, -webkit-transform 200ms ease;
+  transition: background-color 200ms ease, -webkit-transform 200ms ease;
+  transition: transform 200ms ease, background-color 200ms ease;
+  transition: transform 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
+}
+
+.trainerprofiletabs.tab4:hover {
+  background-image: url('../images/Training-01.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.trainerprofiletabs.tab4.w--current {
+  background-image: url('../images/Training-01.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.trainerprofiletabs.tab4.userprofile {
+  background-color: #0ab243;
+}
+
+.trainerprofiletabs.tab4.userprofile:hover {
+  background-image: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+.trainerprofiletabs.tab1 {
+  padding: 30px 0px 0px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.trainerprofiletabs.tab1:hover {
+  background-image: url('../images/StrengthTab-01.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.trainerprofiletabs.tab1.w--current {
+  background-image: url('../images/StrengthTab-01.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: none 200ms ease;
+  transition: none 200ms ease;
+}
+
+.trainerprofiletabs.tab1.w--current:hover {
+  background-size: cover;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.trainerprofiletabs.tab1.userprofile {
+  background-color: #0ab243;
+}
+
+.trainerprofiletabs.tab1.userprofile:hover {
+  background-image: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+.trainerprofiletabs.tab1.userprofile.w--current {
+  position: relative;
+  display: inline-block;
+  background-color: #0ab243;
+}
+
+.trainerprofiletabs.tab1.userprofile.w--current:hover {
+  background-image: none;
+}
+
+.trainerprofiletabs.weightlosstab {
+  padding: 30px 0px 0px;
+  background-color: #4b9bb6;
+  -webkit-transition: background-color 200ms ease, -webkit-transform 200ms ease;
+  transition: background-color 200ms ease, -webkit-transform 200ms ease;
+  transition: transform 200ms ease, background-color 200ms ease;
+  transition: transform 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
+}
+
+.trainerprofiletabs.weightlosstab:hover {
+  background-image: url('../images/WeightLoss-01.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.trainerprofiletabs.weightlosstab.w--current {
+  background-image: url('../images/WeightLoss-01.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.trainerprofiletabs.weightlosstab.userprofile {
+  background-color: #0ab243;
+}
+
+.trainerprofiletabs.weightlosstab.userprofile:hover {
+  background-image: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+.trainerprofiletabs.tab3 {
+  padding: 30px 0px 0px;
+  background-color: #4b9bb6;
+  -webkit-transition: background-color 200ms ease, -webkit-transform 200ms ease;
+  transition: background-color 200ms ease, -webkit-transform 200ms ease;
+  transition: transform 200ms ease, background-color 200ms ease;
+  transition: transform 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
+}
+
+.trainerprofiletabs.tab3:hover {
+  background-image: url('../images/CardtioTab-01.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.trainerprofiletabs.tab3.w--current {
+  background-image: url('../images/CardtioTab-01.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.trainerprofiletabs.tab3.w--current:hover {
+  background-size: cover;
+}
+
+.trainerprofiletabs.tab3.userprofile {
+  background-color: #0ab243;
+}
+
+.trainerprofiletabs.tab3.userprofile:hover {
+  background-image: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+.trainerprofiletabs.userprofile {
+  padding: 30px 0px 0px;
+  background-color: #0ab243;
+}
+
+.trainerprofiletabs.userprofile.healthgoals {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0px 5px 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.trainerprofiletabs.userprofile.healthgoals.review {
+  background-color: #565656;
+}
+
+.trainerprofiletabs.userprofile.healthgoals.review.interest {
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+
+.trainerprofiletabs.userprofile.healthgoals.notselected {
+  background-color: #565656;
+}
+
+.tabtext {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tabtext.user {
+  font-size: 13px;
+}
+
+.tabicon {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.tabicon.userprofile {
+  margin-bottom: 0px;
+}
+
+.tabscontent {
+  display: block;
+  height: auto;
+  padding: 35px 70px;
+  border-radius: 6px;
+  background-color: #4b9bb6;
+}
+
+.previewslider {
+  height: auto;
+  margin: 0px -15px auto;
+  padding-bottom: 1px;
+  background-color: transparent;
+}
+
+.previewrow {
+  margin-bottom: 35px;
+}
+
+.slides {
+  width: 33.33%;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.slides.results {
+  width: 20%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.previewmask {
+  margin-right: 63px;
+  margin-bottom: auto;
+  margin-left: 63px;
+}
+
+.sliderarrow {
+  width: 50%;
+  margin: 38% 0px;
+}
+
+.profileimage {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.previewimage {
+  width: 84%;
+}
+
+.buttoncontainer {
+  display: block;
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.movable-slider {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1000;
+  display: inline-block;
+  overflow: visible;
+  width: 100%;
+  margin: 30px auto 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 210px;
+  float: none;
+  border: 1px none #000;
+  background-color: transparent;
+  color: #565656;
+  text-align: center;
+}
+
+.heightbox {
+  width: 69%;
+  height: 40px;
+  margin-top: 35px;
+  margin-left: 40px;
+  padding: 11px 12px 0px 14px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.heighttext {
+  font-family: Lato, sans-serif;
+  color: #868686;
+  font-size: 12px;
+}
+
+.sidenav {
+  position: fixed;
+  left: 0px;
+  top: 86px;
+  bottom: 0px;
+  z-index: 1;
+  display: none;
+  width: 200px;
+  background-color: #565656;
+}
+
+.sidenav.home {
+  display: block;
+}
+
+.sidenav.train {
+  display: block;
+}
+
+.sidenav.train.workouts {
+  z-index: 1;
+}
+
+.sidenavmenu {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #565656;
+}
+
+.sidenavlink {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 200px;
+  height: 100%;
+  padding-top: 150px;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sidenavlink.train {
+  width: 200px;
+  height: 100%;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background-image: url('../images/runningicon_white_48px.svg');
+  background-position: 50% 50px;
+  background-size: 60px;
+  background-repeat: no-repeat;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.sidenavlink.train:hover {
+  background-color: #868686;
+}
+
+.sidenavlink.learn {
+  width: 200px;
+  height: 100%;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background-image: url('../images/learn_white_64px.svg');
+  background-position: 50% 51px;
+  background-size: 60px;
+  background-repeat: no-repeat;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.sidenavlink.learn:hover {
+  background-color: #868686;
+}
+
+.sidenavlink.connect {
+  width: 200px;
+  height: 100%;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background-image: url('../images/connect_white_64px.svg');
+  background-position: 50% 50px;
+  background-size: 60px;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.sidenavlink.connect:hover {
+  background-color: #868686;
+}
+
+.sidenavlink.workoutlink {
+  background-color: #868686;
+  background-image: url('../images/dumbbell_white_48px.svg');
+  background-position: 50% 50%;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  letter-spacing: 0.5px;
+}
+
+.sidenavlink.workoutlink.workout {
+  background-color: #565656;
+  background-image: url('../images/dumbbell_grey_48px.svg');
+  background-position: 50% 50%;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  color: #a3a3a3;
+}
+
+.sidenavlink.workoutlink.workout:hover {
+  background-image: url('../images/dumbbell_white_48px.svg');
+  background-size: 80px;
+  box-shadow: 0 5px 20px -4px rgba(75, 155, 182, .6);
+  color: #fff;
+}
+
+.sidenavlink.workoutlink.workout.trainers:hover {
+  z-index: 1000;
+  box-shadow: none;
+}
+
+.sidenavlink.workoutlink.workout.workoutpage {
+  background-image: url('../images/dumbbell_white_48px.svg');
+  background-size: 80px;
+  color: #fff;
+}
+
+.sidenavlink.workoutlink.trainers {
+  background-color: transparent;
+  background-image: url('../images/dumbbell_grey_48px.svg');
+  background-size: 80px;
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+  color: #a3a3a3;
+}
+
+.sidenavlink.workoutlink.trainers:hover {
+  z-index: 1000;
+  background-color: #565656;
+  background-image: url('../images/dumbbell_white_48px.svg');
+  background-size: 80px;
+  box-shadow: 0 5px 20px -4px rgba(75, 155, 182, .6);
+  color: #fff;
+}
+
+.sidenavlink.trainerslink {
+  background-image: url('../images/whistle_grey_48px.svg');
+  background-position: 50% 50%;
+  background-size: 60px;
+  background-repeat: no-repeat;
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+  color: #a3a3a3;
+  letter-spacing: 0.5px;
+}
+
+.sidenavlink.trainerslink:hover {
+  background-color: #868686;
+  background-image: url('../images/whistle_white_48px.svg');
+  background-position: 50% 50%;
+  background-size: 60px;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.sidenavlink.trainerslink.workout:hover {
+  background-color: #565656;
+  background-image: url('../images/whistle_white_48px.svg'), url('../images/whistle_grey_48px.svg');
+  background-position: 50% 50%, 50% 50%;
+  background-size: 60px, 60px;
+  background-repeat: no-repeat, no-repeat;
+  box-shadow: 0 -5px 20px -4px rgba(75, 155, 182, .6), 0 5px 20px -4px rgba(75, 155, 182, .6);
+}
+
+.sidenavlink.trainerslink.workout.trainers.w--current:hover {
+  box-shadow: 0 -5px 20px -4px rgba(75, 155, 182, .6), 0 5px 20px -4px rgba(75, 155, 182, .6);
+}
+
+.sidenavlink.trainerslink.workout.trainerpage {
+  background-image: url('../images/whistle_white_48px.svg');
+  background-size: 60px;
+  color: #fff;
+}
+
+.sidenavlink.trainerslink.workout.trainerpage.w--current {
+  background-image: url('../images/whistle_white_48px.svg');
+  background-size: 60px;
+  color: #fff;
+}
+
+.sidenavlink.trainerslink.trainers {
+  z-index: 1000;
+  background-color: #565656;
+  background-image: url('../images/whistle_white_48px.svg');
+  background-size: 60px;
+  color: #fff;
+}
+
+.sidenavlink.trainerslink.trainers:hover {
+  background-color: #565656;
+}
+
+.sidenavlink.nutritionlink {
+  background-image: url('../images/dieticon_grey_.svg');
+  background-position: 50% 50%;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+  color: #a3a3a3;
+  letter-spacing: 0.5px;
+}
+
+.sidenavlink.nutritionlink:hover {
+  background-color: #868686;
+  background-image: url('../images/dieticon_white_.svg');
+  background-position: 50% 50%;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.sidenavlink.nutritionlink.workout {
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+
+.sidenavlink.nutritionlink.workout:hover {
+  background-color: #565656;
+  background-image: url('../images/dieticon_white_.svg'), url('../images/dieticon_grey_.svg');
+  background-position: 50% 50%, 50% 50%;
+  background-size: 80px, 80px;
+  background-repeat: no-repeat, no-repeat;
+  box-shadow: 0 -5px 20px -4px rgba(75, 155, 182, .6);
+}
+
+.sidenavlink.nutritionlink.workout.nutritionpage {
+  background-image: url('../images/dieticon_white_.svg');
+  background-size: 80px;
+  color: #fff;
+}
+
+.sidenavlink.nutritionlink.workout.nutritionpage.w--current {
+  background-image: url('../images/dieticon_white_.svg');
+  background-size: 80px;
+  color: #fff;
+}
+
+.sidenavlink.nutritionlink.trainers {
+  background-color: #565656;
+}
+
+.sidenavlink.nutritionlink.nutrition {
+  background-color: #a3a3a3;
+  background-image: url('../images/dieticon_white_.svg');
+  background-size: 80px;
+  color: #fff;
+}
+
+.sidenavlink.myprofile {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sidenavlink.settings {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 45px;
+  text-align: left;
+}
+
+.sidenavlink.settings:hover {
+  background-color: #868686;
+}
+
+.sidenavlink.settings.w--current {
+  color: #fff;
+}
+
+.sidenavlink.settings.selected {
+  padding-left: 45px;
+  background-color: #868686;
+  text-align: left;
+}
+
+.sidenavlink.settings.selected.w--current {
+  color: #fff;
+}
+
+.seeksearch {
+  position: absolute;
+  left: 0px;
+  top: 86px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 200px;
+  background-color: #e2e2e2;
+  background-image: url('../images/seeksearchbg-01.png');
+  background-position: 60% 50%;
+  background-size: 480px;
+  background-repeat: no-repeat;
+}
+
+.seeksearch.train {
+  position: relative;
+  left: 0px;
+  top: 86px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  height: auto;
+  min-height: 100vh;
+  padding-left: 200px;
+  background-image: url('../images/trainbg-01.png');
+  background-position: 90% 100%;
+  background-size: 80%;
+  background-attachment: fixed;
+}
+
+.seeksearch.train.workouts {
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+.seeksearch.train.trainers {
+  background-size: 75%;
+}
+
+.seeksearch.keycontainer {
+  height: 100%;
+  padding-left: 0px;
+  background-position: 50% 25px;
+  background-attachment: scroll;
+}
+
+.seeksearch.home {
+  height: auto;
+}
+
+.seeksearch.settings {
+  min-height: 100vh;
+  background-image: none;
+}
+
+.seeksearch.settings.diet {
+  padding-left: 200px;
+}
+
+.searchheading {
+  display: block;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #000;
+  font-size: 38px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.searchcontainer {
+  display: block;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px;
+}
+
+.searchcontainer.home.key {
+  height: 100%;
+}
+
+.searchparagraph {
+  display: block;
+  margin: 60px auto;
+  color: #565656;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.searchbar {
+  display: block;
+  width: 90%;
+  height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 6px;
+  background-color: #fff;
+  background-image: url('../images/magniflipped_ltgray_48px.svg');
+  background-position: 10px 50%;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  font-family: Lato, sans-serif;
+}
+
+.searchbar.box {
+  width: 100%;
+  margin-left: 0px;
+  padding-left: 40px;
+  background-image: url('../images/deletesearch_ltgrey_48px.svg'), url('../images/magniflipped_ltgray_48px.svg');
+  background-position: 99% 50%, 10px 50%;
+  background-size: 24px, 24px;
+  background-repeat: no-repeat, no-repeat;
+  text-transform: lowercase;
+}
+
+.searchbar.trainers {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 0px;
+  float: none;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
+}
+
+.searchbar.keyaccess {
+  display: block;
+  width: 50%;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: none;
+  border: 1px solid transparent;
+  background-image: none;
+  text-align: center;
+}
+
+.searchboxsection {
+  position: absolute;
+  left: 0px;
+  top: 86px;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  height: 100%;
+}
+
+.searchbox {
+  height: 140%;
+  border-top: 10px solid #0ab243;
+  background-color: #9c9c9c;
+}
+
+.searchboxrow {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.searchboxheader {
+  margin-top: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+.leftcolumn {
+  padding-left: 40px;
+  border-right: 1px solid #e2e2e2;
+}
+
+.leftcolumnheader {
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.leftcolumntext {
+  padding-left: 0px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.narrowresultsbox {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.checkbox {
+  margin-left: 0px;
+  float: right;
+}
+
+.checkboxlabel {
+  text-align: left;
+}
+
+.categorybox {
+  padding-top: 10px;
+}
+
+.rightcolumn {
+  padding-right: 25px;
+}
+
+.searchresultstext {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  float: left;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+}
+
+.searchresultstext.searchedtext {
+  display: inline-block;
+  margin-left: 5px;
+  float: none;
+  color: #575757;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.articlesbox {
+  overflow: scroll;
+  height: 660px;
+}
+
+.article {
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.article.workout {
+  padding-right: 0px;
+  border-bottom-style: none;
+  -webkit-transition: box-shadow 200ms ease;
+  transition: box-shadow 200ms ease;
+}
+
+.article.workout:hover {
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, .3);
+}
+
+.article.workout.nutrition {
+  width: auto;
+}
+
+.articleheading {
+  margin-bottom: 0px;
+  padding-left: 10px;
+  float: left;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+.articleheading.workout {
+  float: none;
+  color: #4b9bb6;
+  text-transform: none;
+}
+
+.articleheading.train.trainers {
+  display: inline-block;
+  padding-left: 0px;
+  float: none;
+  color: #4b9bb6;
+}
+
+.articledescrp {
+  display: block;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.image.workout {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.image.trainer {
+  width: 100%;
+}
+
+.articleparagraphdescription {
+  display: inline-block;
+  padding-right: 0px;
+  padding-left: 10px;
+  color: #565656;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.articleparagraphdescription.train.trainers {
+  padding-left: 0px;
+  text-align: left;
+}
+
+.articleparagraphdescription.nutrition {
+  text-align: left;
+}
+
+.articleparagraphdescription.home {
+  text-align: left;
+}
+
+.articleparagraphdescription.workoutdescription {
+  text-align: left;
+}
+
+.author {
+  margin-bottom: 0px;
+  padding-right: 5px;
+  float: right;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+.author.workout {
+  display: block;
+  margin-top: 0px;
+  padding-right: 0px;
+  padding-left: 10px;
+  float: none;
+  color: #565656;
+  font-weight: 600;
+  text-align: left;
+}
+
+.author.workout.trainers.specialty {
+  padding-left: 0px;
+}
+
+.xout {
+  float: right;
+  background-color: transparent;
+  font-family: Lato, sans-serif;
+  color: #fff;
+}
+
+.heading.train {
+  display: block;
+  margin-bottom: 0px;
+  float: left;
+  color: #4b9bb6;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+.basedon {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  float: right;
+  font-family: Lato, sans-serif;
+  color: #565656;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+.editgoalslink {
+  display: inline-block;
+  float: none;
+  color: #565656;
+  text-decoration: underline;
+}
+
+.headingblock {
+  margin-bottom: 50px;
+}
+
+.headingblock.train.trainers {
+  margin-bottom: 0px;
+}
+
+.itemblock {
+  width: 98%;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid hsla(0, 0%, 53%, .5);
+  font-family: Lato, sans-serif;
+  text-align: left;
+}
+
+.itembox {
+  overflow: scroll;
+  height: 500px;
+}
+
+.itembox.nutrition {
+  display: none;
+}
+
+.emailicon {
+  float: left;
+}
+
+.profileicons {
+  margin-right: 5px;
+  float: left;
+}
+
+.healthgoalsblock.trainerprofiletabs.userprofile {
+  background-color: #0ab243;
+}
+
+.healthgoalscontainer {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.healthgoalscontainer.reviewhg {
+  margin-top: 35px;
+}
+
+.keyfield {
+  display: block;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 8px;
+  float: none;
+  font-family: Lato, sans-serif;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.keyfield.warning {
+  color: #f3320e;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.keyform {
+  display: block;
+  margin-top: 50px;
+}
+
+.keysuccessmessage {
+  margin-top: 180px;
+  background-color: #0ab243;
+}
+
+.errormessage {
+  margin-top: 50px;
+  background-color: #f3320e;
+}
+
+.healthgoalsfilter {
+  width: 100px;
+  height: 40px;
+  margin-top: 35px;
+  padding: 8px 12px;
+}
+
+.healthgoalsfilterbutton {
+  display: inline-block;
+  margin-right: 18px;
+  margin-left: 5px;
+  float: none;
+}
+
+.radiobuttonform {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.menuddlist {
+  background-color: #fff;
+  font-family: Montserrat, sans-serif;
+}
+
+.menuddlist.w--open {
+  top: 50px;
+  bottom: auto;
+  text-transform: none;
+}
+
+.menuddlist.userpicdd.w--open {
+  top: 35px;
+}
+
+.ddlink {
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  color: #565656;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.ddlink:hover {
+  -webkit-transform: translate(5px, 0px);
+  -ms-transform: translate(5px, 0px);
+  transform: translate(5px, 0px);
+}
+
+.ddlink.w--current {
+  color: #565656;
+}
+
+.mealplanrows {
+  width: 100%;
+}
+
+.workoutrows {
+  width: 100%;
+}
+
+.slider {
+  display: block;
+  width: auto;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-style: none;
+}
+
+.settingsdropdown {
+  right: 105px;
+}
+
+.confirmtext {
+  display: block;
+  margin-top: 35px;
+  margin-left: 40px;
+  font-family: Lato, sans-serif;
+  color: #333;
+  font-size: 13px;
+  text-align: left;
+}
+
+.confirmtext.rtcol {
+  margin-left: 51px;
+}
+
+.confirmtext.hidden {
+  display: none;
+}
+
+.confirmtext.explanationtext {
+  margin-top: 0px;
+}
+
+.confirmtext.explanationtext.reviewts {
+  padding-right: 40px;
+}
+
+.confirmtext.reviewts {
+  margin-left: 0px;
+}
+
+.confirmcol {
+  padding-top: 0px;
+}
+
+.confirmcol.reviewts {
+  padding-left: 21px;
+}
+
+.tabsmenu.reviewinfo {
+  width: 100%;
+}
+
+.reviewtab {
+  width: 33%;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.reviewtab.w--current {
+  width: 34%;
+  background-color: #9c9c9c;
+}
+
+.reviewtab.hgi {
+  width: 33%;
+  padding-right: 27px;
+  padding-left: 27px;
+}
+
+.tabmenutext {
+  margin-left: 0px;
+  font-family: Lato, sans-serif;
+}
+
+.pricetext {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.waiverdiv {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.waiverdiv.waiver {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.waivertextbox {
+  overflow: scroll;
+  height: 300px;
+  margin-top: 35px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 5px;
+  padding-left: 0px;
+  color: #231f20;
+  text-align: left;
+}
+
+.waiverformblock {
+  display: none;
+  margin-top: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.waiverformblock.waiver {
+  display: block;
+}
+
+.waivertext {
+  font-family: Lato, sans-serif;
+  color: #231f20;
+  font-weight: 400;
+}
+
+.paywithcard {
+  margin-left: 10px;
+  background-color: #4b9bb6;
+  font-family: Lato, sans-serif;
+  color: #fff;
+}
+
+.editbutton {
+  display: inline;
+  padding-right: 40px;
+  padding-left: 40px;
+  float: right;
+  border: 1px solid #868686;
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  color: #868686;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.settingsbody {
+  background-color: #e2e2e2;
+}
+
+.settingsheading {
+  color: #0ab243;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+.settingsheading.privacy {
+  margin-bottom: 0px;
+  color: #048730;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.settingsheading.privacy.secondary {
+  padding-left: 20px;
+  color: #0ab243;
+}
+
+.settingsheading.dietcurrentdate {
+  display: inline-block;
+  float: none;
+  color: #000;
+}
+
+.settingsheading.dietheader {
+  display: inline-block;
+  float: none;
+}
+
+.logheader {
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+}
+
+.logheader.content {
+  margin-bottom: 0px;
+  color: #565656;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.logheader.content.product {
+  line-height: 44px;
+}
+
+.logheader.content.diet {
+  font-family: Lato, sans-serif;
+  color: #868686;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.logheader.content.diet.nofood {
+  text-align: left;
+}
+
+.logheader.purchases {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.logheader.purchases.confirmation {
+  font-size: 16px;
+}
+
+.settingsdiv {
+  margin-bottom: 20px;
+}
+
+.settingsdiv.categories {
+  margin-bottom: 0px;
+}
+
+.settingsdiv.dietheadingdiv {
+  text-align: center;
+}
+
+.log {
+  display: block;
+  background-color: #fff;
+}
+
+.log.toplt {
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  border-top-left-radius: 8px;
+}
+
+.log.toplt.diet {
+  padding: 10px;
+}
+
+.log.topmid {
+  border-right: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  border-bottom-color: #e2e2e2;
+}
+
+.log.toprt {
+  border-left: 1px solid #e2e2e2;
+  border-bottom-color: #e2e2e2;
+  border-top-right-radius: 8px;
+}
+
+.log.toprt.diet {
+  padding: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-family: Lato, sans-serif;
+}
+
+.log.mid {
+  border-top: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.log.mid.middle {
+  border-left: 1px solid #e2e2e2;
+}
+
+.log.mid.farrt {
+  border-left: 1px none #e2e2e2;
+  border-right-style: none;
+  border-right-width: 0px;
+}
+
+.log.midltoutter {
+  border-top: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.log.midinner {
+  border: 1px solid #e2e2e2;
+}
+
+.log.midrtoutter {
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+}
+
+.log.botlt {
+  border-top: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-bottom-left-radius: 8px;
+}
+
+.log.botmid {
+  border-top: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+}
+
+.log.botrt {
+  border-top: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  border-bottom-right-radius: 8px;
+}
+
+.log.diet.bot {
+  padding: 10px;
+  border-top: 1px solid #e2e2e2;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.log.diet.bot.empty {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.toplog.activitytable {
+  cursor: pointer;
+}
+
+.midlog.activitytable {
+  cursor: pointer;
+}
+
+.logchart {
+  overflow: scroll;
+  width: 880px;
+  height: 440px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.trophy {
+  position: absolute;
+  display: block;
+  padding-top: 10px;
+  float: none;
+}
+
+.table {
+  font-size: 20px;
+}
+
+.settingparagraph {
+  color: #565656;
+  font-size: 14px;
+  text-align: left;
+}
+
+.settingparagraph.main {
+  margin-bottom: 10px;
+}
+
+.settingparagraph.secondary {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.dlarrow {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+.activitycontent {
+  margin-top: 35px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.loadingbar {
+  display: inline-block;
+  width: 33%;
+  height: 20px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  background-color: #0ab243;
+}
+
+.loadingbar._50 {
+  width: 50%;
+}
+
+.loadingbar._62 {
+  width: 62%;
+}
+
+.loadingbar._100 {
+  display: block;
+  width: 100%;
+  float: left;
+  background-color: #0ab243;
+}
+
+.loadingbar._100.grey {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  overflow: visible;
+  float: left;
+  clear: none;
+}
+
+.activitytext {
+  display: inline-block;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-family: Lato, sans-serif;
+  color: #565656;
+  letter-spacing: 0.5px;
+}
+
+.activitytext.numerical {
+  float: none;
+}
+
+.activityrow {
+  display: block;
+  padding-top: 0px;
+}
+
+.modalnotrophy {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+  display: none;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.modalpaywithcard {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+  display: none;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.dietlogfield {
+  height: 30px;
+  margin-bottom: 10px;
+  border-style: none;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.dietlogfield.servingsize {
+  width: auto;
+}
+
+.dietlogfield.when {
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #868686;
+}
+
+.dietlogfield.waterconsumed {
+  width: auto;
+}
+
+.dietlogfield.dietfilter {
+  width: 200px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  float: none;
+}
+
+.dietheading {
+  margin-bottom: 0px;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+.logfoodbutton {
+  position: static;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  margin-top: 35px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  float: right;
+  border-radius: 4px;
+  background-color: #0ab243;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.selectdate {
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 8px;
+  background-color: #a3a3a3;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.dietboxtab {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: #565656;
+  font-family: Lato, sans-serif;
+  color: #9c9c9c;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.dietboxtab.w--current {
+  height: auto;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: #565656;
+  font-family: Lato, sans-serif;
+  color: #0ab243;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.dietboxtabmenu {
+  background-color: #565656;
+}
+
+.diettabcurrent {
+  color: #0ab243;
+  font-weight: 700;
+}
+
+.tabcontentcontainer {
+  padding: 10px;
+}
+
+.accordion {
+  display: block;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #fff;
+  font-family: Montserrat, sans-serif;
+  color: #000;
+  font-size: 18px;
+}
+
+.accordion.loggedfoods {
+  border-bottom: 1px solid #e2e2e2;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.accordion.dailytotals {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.accordion.calorieintake {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.dropdownarrow {
+  float: right;
+  color: #a3a3a3;
+  font-weight: 700;
+  text-align: right;
+}
+
+.accordion-toggle {
+  width: 100%;
+}
+
+.accordion-toggle.loggedfoods {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.accordianshape {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: auto;
+  border-radius: 8px;
+}
+
+.itemlist {
+  position: relative;
+  display: none;
+  height: 0px;
+  background-color: #fff;
+}
+
+.itemlist.w--open {
+  display: block;
+}
+
+.itemlist.calorieintake {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.accordianheader {
+  letter-spacing: 0.5px;
+}
+
+.accordianheader.calintake {
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.accordianheader.calintake.last30 {
+  margin-left: 10px;
+  font-family: Lato, sans-serif;
+  color: #a3a3a3;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.loggedfoodsimage {
+  margin-top: 10px;
+  padding-top: 0px;
+}
+
+.dailytotalsimage {
+  margin-top: 10px;
+  padding-top: 0px;
+}
+
+.calintakeimage {
+  margin-top: 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.interestform {
+  margin-top: 35px;
+}
+
+html.w-mod-js *[data-ix="display-none-on-load"] {
+  display: none;
+}
+
+html.w-mod-js *[data-ix="display-none-navi"] {
+  opacity: 0;
+  -webkit-transform: translate(0px, -100px);
+  -ms-transform: translate(0px, -100px);
+  transform: translate(0px, -100px);
+}
+
+html.w-mod-js *[data-ix="load"] {
+  opacity: 0;
+}
+
+html.w-mod-js *[data-ix="tabarrow"] {
+  display: none;
+}
+
+html.w-mod-js *[data-ix="small-none"] {
+  display: none;
+  opacity: 0;
+  -webkit-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+}
+
+html.w-mod-js *[data-ix="loadfromleft"] {
+  opacity: 0;
+  -webkit-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate(-100px, 0px);
+}
+
+html.w-mod-js *[data-ix="modalnoneload"] {
+  display: none;
+  opacity: 0;
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 991px) {
+  .navmenu {
+    overflow: auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .navlink {
+    text-align: center;
+  }
+  .navlink.connectlink {
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+  }
+  .navlink.connectlink:hover {
+    -webkit-transform: translate(0px, -5px);
+    -ms-transform: translate(0px, -5px);
+    transform: translate(0px, -5px);
+    color: #0ab243;
+  }
+  .navlink.traininglink {
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+  }
+  .navlink.traininglink:hover {
+    -webkit-transform: translate(0px, -5px);
+    -ms-transform: translate(0px, -5px);
+    transform: translate(0px, -5px);
+    color: #0e7698;
+  }
+  .navlink.learnlink {
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+  }
+  .navlink.learnlink:hover {
+    -webkit-transform: translate(0px, -5px);
+    -ms-transform: translate(0px, -5px);
+    transform: translate(0px, -5px);
+    color: #f3320e;
+  }
+  .navlink.trainerprofilelinks {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .navlink.menudropdown {
+    margin-top: 0px;
+  }
+  .navlink.menudropdown.user.trainlink.settingsdd {
+    left: 0px;
+    top: 290px;
+    right: 0px;
+  }
+  .navlink.menudropdown.user.trainlink.settingsdd.trainerprofile {
+    top: 170px;
+  }
+  .mobiicon {
+    margin-top: 10px;
+    color: #565656;
+    font-size: 50px;
+  }
+  .menubutton {
+    display: block;
+    float: right;
+  }
+  .menubutton.sidenavmenubutton {
+    position: static;
+  }
+  .communitybg {
+    height: 100%;
+    background-image: url('../images/CommunityBG-01.png');
+    background-size: 1000px;
+  }
+  .communitybox {
+    margin-top: 46%;
+  }
+  .communitybox.createaccbox {
+    height: auto;
+    margin-top: 160px;
+    margin-bottom: 150px;
+  }
+  .communitybox.createaccbox.byspbox {
+    width: 90%;
+    padding-bottom: 40px;
+  }
+  .communitybox.createaccbox.byspbox.trainingsetup {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .communitybox.createaccbox.symptomsbox {
+    width: 70%;
+    height: auto;
+    margin-top: 46%;
+    margin-bottom: 46%;
+  }
+  .communitybox.createaccbox.forgotpwbox {
+    height: auto;
+  }
+  .communitybox.createaccbox.detailedactivity {
+    width: auto;
+  }
+  .communitybox.createaccbox.dietbox {
+    width: auto;
+  }
+  .loginfields.createaccfields {
+    background-image: none;
+  }
+  .rmbrme.forgotpw {
+    padding-left: 57px;
+  }
+  .continuebuttons {
+    margin-left: 54px;
+  }
+  .continuebuttons.loginbtn {
+    margin-top: 2px;
+  }
+  .continuebuttons.createaccfield {
+    padding-left: 20px;
+  }
+  .continuebuttons.createaccfield.byspbutton {
+    margin-top: 0px;
+  }
+  .continuebuttons.trainerprofilebutton.editprofile {
+    top: 100px;
+    right: 60px;
+    width: 23%;
+  }
+  .selectfield.symptomsfield {
+    margin-bottom: 35px;
+  }
+  .selectfield.train.trainers.location.nutrition {
+    display: inline-block;
+    float: right;
+  }
+  .loginlink {
+    margin-left: -55px;
+  }
+  .profilepic {
+    display: block;
+    max-width: 100%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .rememberme {
+    margin-left: 30px;
+  }
+  .remembermebox {
+    margin-top: 3px;
+  }
+  .explaindisability {
+    margin-bottom: 25px;
+  }
+  .descriptionfield.workoutpreviewbox {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .descriptionfield.briefworkoutsummary {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .healthgoalsbutton.suggests {
+    width: 158px;
+  }
+  .heatlgoalscontainer {
+    margin-bottom: 35px;
+  }
+  .continuebutton.key {
+    width: 75%;
+  }
+  .disabilitybuttonfield {
+    margin-left: 45px;
+  }
+  .bottomtextblock {
+    margin-bottom: 0px;
+  }
+  .bottomtextblock.text {
+    margin-bottom: 35px;
+  }
+  .pricingchartcontainer {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .pricechartbox {
+    margin-bottom: 35px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 6px;
+  }
+  .chartheadertxt {
+    display: block;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Lato, sans-serif;
+    color: #4fcb79;
+    text-align: center;
+  }
+  .headercolumns {
+    border: 1px solid #e2e2e1;
+  }
+  .headercolumns.emptycolumn {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-width: 1px;
+  }
+  .buttonrow {
+    margin-right: -10px;
+  }
+  .buttonrow.healthgoals {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .setuptab {
+    display: inline-block;
+    width: 21%;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+  }
+  .setuptab.w--current {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .setuptabmenu {
+    width: 100%;
+  }
+  .buttoncolumn {
+    padding-right: 60px;
+  }
+  .buttoncolumn.byspcont {
+    padding-right: 0px;
+  }
+  .modal-background {
+    overflow: scroll;
+  }
+  .modal-window {
+    width: 80%;
+  }
+  .trainerprofiletext.plan {
+    padding-left: 0px;
+  }
+  .trainerprofilecolumn2 {
+    padding-left: 0px;
+  }
+  .profiletrainertabmenu {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .trainerprofiletabs.tab4 {
+    width: 145px;
+  }
+  .trainerprofiletabs.tab1 {
+    width: 145px;
+    margin-right: 20px;
+  }
+  .trainerprofiletabs.tab1.w--current {
+    width: 150px;
+    margin-right: 20px;
+    padding-bottom: 0px;
+  }
+  .trainerprofiletabs.weightlosstab {
+    width: 145px;
+    margin-right: 20px;
+  }
+  .trainerprofiletabs.tab3 {
+    width: 145px;
+    margin-right: 20px;
+  }
+  .trainerprofiletabs.userprofile.healthgoals {
+    margin-bottom: 20px;
+  }
+  .slides {
+    width: 50%;
+  }
+  .slides.results {
+    width: 33.3%;
+  }
+  .previewimage {
+    width: 100%;
+  }
+  .movable-slider {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 235px;
+  }
+  .sidenav {
+    position: absolute;
+    left: 0px;
+    top: 86px;
+    bottom: 0px;
+    background-color: transparent;
+  }
+  .sidenav.home {
+    display: block;
+  }
+  .sidenav.train.workouts {
+    top: 96px;
+  }
+  .sidenavlink.workoutlink {
+    height: auto;
+    padding-top: 20px;
+    background-image: none;
+  }
+  .sidenavlink.workoutlink.workout {
+    background-image: none;
+  }
+  .sidenavlink.workoutlink.workout.trainerpage:hover {
+    background-image: none;
+  }
+  .sidenavlink.workoutlink.workout.workoutpage {
+    background-image: none;
+  }
+  .sidenavlink.workoutlink.workout.nutritionpage {
+    background-image: none;
+  }
+  .sidenavlink.workoutlink.workout.nutritionpage:hover {
+    background-image: none;
+  }
+  .sidenavlink.workoutlink.trainers {
+    background-image: none;
+  }
+  .sidenavlink.workoutlink.trainers:hover {
+    background-image: none;
+  }
+  .sidenavlink.trainerslink {
+    height: auto;
+    padding-top: 20px;
+    background-image: none;
+  }
+  .sidenavlink.trainerslink:hover {
+    background-image: none;
+  }
+  .sidenavlink.trainerslink.workout:hover {
+    background-image: none;
+  }
+  .sidenavlink.trainerslink.workout.trainerpage {
+    background-image: none;
+  }
+  .sidenavlink.trainerslink.workout.trainerpage:hover {
+    background-image: none;
+  }
+  .sidenavlink.trainerslink.workout.nutritionpage {
+    background-image: none;
+  }
+  .sidenavlink.trainerslink.workout.nutritionpage:hover {
+    background-image: none;
+  }
+  .sidenavlink.trainerslink.trainers {
+    background-image: none;
+  }
+  .sidenavlink.trainerslink.trainers:hover {
+    background-image: none;
+  }
+  .sidenavlink.nutritionlink {
+    height: auto;
+    padding-top: 20px;
+    background-image: none;
+    color: #a3a3a3;
+  }
+  .sidenavlink.nutritionlink:hover {
+    background-image: none;
+    color: #fff;
+  }
+  .sidenavlink.nutritionlink.workout:hover {
+    background-image: none;
+    box-shadow: 0 -5px 20px -4px rgba(75, 155, 182, .6), 0 5px 20px -4px rgba(75, 155, 182, .6);
+  }
+  .sidenavlink.nutritionlink.workout.nutritionpage {
+    background-image: none;
+  }
+  .sidenavlink.nutritionlink.trainers:hover {
+    background-image: none;
+  }
+  .sidenavlink.nutritionlink.nutrition {
+    background-image: none;
+  }
+  .sidenavlink.settings {
+    height: auto;
+  }
+  .sidenavlink.settings.selected.w--current {
+    height: auto;
+  }
+  .seeksearch {
+    left: 0px;
+    top: 95px;
+    right: 0px;
+    bottom: 0px;
+    width: auto;
+    padding-left: 0px;
+    background-position: 50% 50%;
+    background-size: 700px;
+  }
+  .seeksearch.train {
+    padding-left: 0px;
+    background-image: url('../images/trainbg-01.png');
+    background-position: 90% 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .seeksearch.train.workouts {
+    background-image: url('../images/trainbg-01.png');
+    background-position: 50% 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .seeksearch.train.trainers {
+    height: 100%;
+    background-image: url('../images/trainbg-01.png');
+    background-position: 50% 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .seeksearch.keycontainer {
+    position: absolute;
+    top: 85px;
+    height: 100%;
+  }
+  .seeksearch.settings.diet {
+    padding-left: 0px;
+  }
+  .searchheading {
+    margin-top: 150px;
+  }
+  .searchcontainer {
+    padding-right: 100px;
+    padding-left: 0px;
+  }
+  .searchcontainer.workout {
+    padding-right: 0px;
+  }
+  .searchcontainer.home {
+    padding-left: 100px;
+  }
+  .searchcontainer.home.key {
+    height: 100%;
+  }
+  .searchcontainer.train.trainers {
+    padding-right: 0px;
+  }
+  .searchbar.keyaccess {
+    width: 75%;
+  }
+  .searchboxsection {
+    display: none;
+  }
+  .searchbox {
+    height: 100%;
+    margin-top: 10px;
+  }
+  .searchboxheader {
+    padding-left: 20px;
+  }
+  .leftcolumn {
+    padding-left: 20px;
+  }
+  .articlesbox {
+    height: 680px;
+  }
+  .article.workout {
+    padding-right: 0px;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  .articleparagraphdescription.train.trainers {
+    text-align: left;
+  }
+  .sidenavmenubutton {
+    float: left;
+  }
+  .itembox {
+    height: 755px;
+  }
+  .healthgoalsfilterbutton {
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+  .radiobuttonform {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .settingsdropdown {
+    top: auto;
+    right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .logheader {
+    font-size: 18px;
+  }
+  .logheader.content {
+    font-size: 12px;
+  }
+  .logheader.content.product {
+    line-height: 44px;
+  }
+  .logheader.purchases {
+    font-size: 12px;
+    text-align: center;
+  }
+  .logheader.purchases.confirmation {
+    font-size: 11px;
+  }
+  .log.topmid.product {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .log.midinner.product {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .log.botmid.product {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .logchart {
+    width: 660px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .mobilesidenav {
+    background-color: #565656;
+  }
+  .dietlogfield.servingsize {
+    width: 90%;
+  }
+  .dietlogfield.when {
+    width: 100%;
+  }
+  .dietlogfield.waterconsumed {
+    width: 90%;
+  }
+  .logfoodbutton {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .navmenu {
+    overflow: auto;
+  }
+  .navlink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navlink.connectlink {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navlink.traininglink {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navlink.learnlink {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navlink.trainerprofilelinks {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navlink.trainerprofilelinks.user.trainlink.home {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navlink.menudropdown {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navlink.menudropdown.w--open {
+    margin-bottom: 0px;
+  }
+  .navlink.menudropdown.user.trainlink {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navlink.menudropdown.trainpage {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navlink.home.w--current {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .textfield {
+    width: 100%;
+  }
+  .textfield.forgotpwtxtfield {
+    width: 100%;
+  }
+  .mobiicon {
+    font-size: 45px;
+  }
+  .communitybg {
+    height: auto;
+    background-image: url('../images/CommunityBG-01.png');
+    background-size: cover;
+  }
+  .communitybox {
+    margin-top: 15%;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .communitybox.createaccbox {
+    width: auto;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 0px;
+  }
+  .communitybox.createaccbox.byspbox {
+    width: 100%;
+  }
+  .communitybox.createaccbox.byspbox.trainingsetup {
+    width: auto;
+  }
+  .communitybox.createaccbox.symptomsbox {
+    width: 75%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .communitybox.createaccbox.forgotpwbox {
+    width: 90%;
+    margin-top: 120px;
+  }
+  .communitybox.createaccbox.detailedactivity {
+    width: auto;
+  }
+  .loginheader {
+    margin-top: 0px;
+  }
+  .loginfields.createaccfields {
+    width: 76%;
+  }
+  .loginfields.createaccfields.rtcol {
+    width: 76%;
+  }
+  .rmbrme {
+    padding-right: 70px;
+  }
+  .rmbrme.forgotpw {
+    padding-left: 47px;
+  }
+  .continuebuttons {
+    margin-left: 44px;
+  }
+  .continuebuttons.createaccfield {
+    display: block;
+    width: 60%;
+    margin-left: 96px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .continuebuttons.createaccfield.byspbutton.healthgoals {
+    width: 140px;
+    margin-right: 0%;
+  }
+  .continuebuttons.forgotpwbtn.sendcode {
+    width: 100%;
+  }
+  .continuebuttons.forgotpwbtn.forgotpwcontbtn {
+    width: 100%;
+  }
+  .continuebuttons.trainerprofilebutton.editprofile {
+    right: 45px;
+    width: 26%;
+  }
+  .boxtitle {
+    margin-left: 0px;
+  }
+  .boxdesc {
+    margin-left: 0px;
+    text-align: left;
+    text-indent: 0px;
+  }
+  .selectfield.rtcol {
+    width: 76%;
+  }
+  .selectfield.trainerspecialtydd {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .selectfield.gymaffiliation {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .selectfield.symptomsfield {
+    width: 102%;
+    margin-bottom: 35px;
+  }
+  .selectfield.height.in {
+    width: 33%;
+  }
+  .selectfield.height.ft {
+    width: 33%;
+  }
+  .selectfield.train.trainers.specialty {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+  .selectfield.train.trainers.location {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    float: none;
+  }
+  .selectfield.train.trainers.location.nutrition {
+    float: right;
+  }
+  .loginlink {
+    margin-left: -54px;
+  }
+  .trainertype {
+    width: 76%;
+  }
+  .toprow {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .contentcolumns {
+    padding-right: 0px;
+    padding-bottom: 50px;
+  }
+  .contentcolumns.trainerprofilecolumns {
+    padding-right: 0px;
+  }
+  .contentcontainer {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .contentcontainer.trainerprofilecontainer {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .contentcontainer.diet {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .activityboxes {
+    width: 100%;
+  }
+  .activityboxforms {
+    width: 93%;
+  }
+  .rememberme {
+    margin-left: 28px;
+  }
+  .remembermebox {
+    margin-right: 48px;
+  }
+  .explaindisability {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .descbox {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .descbox.specialtybox.uploadbox {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-bottom: 35px;
+    margin-left: auto;
+  }
+  .descbox.specialtybox.uploadboxrt {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .descbox.specialtybox.describebox {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .descbox.uploadphotobox {
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .descbox.summarypreviewbox {
+    display: block;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .healthgoalsbutton {
+    width: 140px;
+    height: 140px;
+  }
+  .healthgoalsbutton.suggests {
+    width: 140px;
+  }
+  .trainerq {
+    width: 76%;
+    padding-top: 0px;
+  }
+  .continuebutton {
+    width: 60%;
+    margin-left: 96px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .continuebutton.key {
+    width: 75%;
+  }
+  .continuebutton.confirmbutton {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .continuebutton.waiver {
+    margin-bottom: 35px;
+  }
+  .areyouatrainerrow {
+    padding-top: 10px;
+  }
+  .disabilitybuttonfield {
+    margin-left: auto;
+  }
+  .workoutboxcontainer {
+    margin-left: 0px;
+    padding-right: 0px;
+  }
+  .bottomtextblock.text {
+    margin-bottom: 35px;
+  }
+  .uploadcontainer {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .insidecontainer {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .pricechartbox {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .trainingsetupwrapper {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .buttonrow {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .buttonrow.healthgoals {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .setuptab.w--current {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .tabrtarw {
+    margin-left: auto;
+  }
+  .buttoncolumn {
+    padding-right: 80px;
+    padding-left: 0px;
+  }
+  .contenttype {
+    height: 100px;
+  }
+  .contenttype.pricingtypeboxes {
+    height: 100px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .sympdesccontainer {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .modal-background.wtrophy {
+    display: block;
+  }
+  .modal-window {
+    width: 100%;
+  }
+  .trainerbackground {
+    height: auto;
+  }
+  .trainerprofiletext.plan {
+    margin-bottom: 35px;
+  }
+  .trainerprofiletextblock {
+    color: #231f20;
+  }
+  .trainerprofilecolumn2 {
+    padding-left: 10px;
+  }
+  .profiletrainertabmenu {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .trainerprofiletabs.tab4 {
+    width: 100%;
+    height: 130px;
+  }
+  .trainerprofiletabs.tab1 {
+    width: 100%;
+    height: 130px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .trainerprofiletabs.tab1.w--current {
+    width: 100%;
+    height: 130px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  .trainerprofiletabs.weightlosstab {
+    width: 100%;
+    height: 130px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  .trainerprofiletabs.tab3 {
+    width: 100%;
+    height: 130px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  .trainerprofiletabs.tab3.w--current {
+    margin-right: 10px;
+  }
+  .tabscontent {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .slides {
+    width: 100%;
+  }
+  .slides.results {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .movable-slider {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 235px;
+  }
+  .heightbox {
+    width: 69%;
+  }
+  .sidenav.train.workouts {
+    top: 91px;
+  }
+  .seeksearch {
+    top: 90px;
+    height: 100%;
+    background-size: 450px;
+  }
+  .seeksearch.train {
+    background-size: contain;
+  }
+  .seeksearch.train.workouts {
+    background-image: none;
+  }
+  .seeksearch.train.trainers {
+    height: auto;
+    background-image: url('../images/trainbg-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .seeksearch.keycontainer {
+    height: 100%;
+  }
+  .seeksearch.home {
+    background-position: 50% 50%;
+    background-attachment: scroll;
+  }
+  .seeksearch.settings {
+    height: auto;
+  }
+  .searchheading {
+    margin-top: 0px;
+  }
+  .searchcontainer {
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .searchcontainer.workout {
+    padding-right: 10px;
+  }
+  .searchcontainer.home {
+    padding-left: 10px;
+  }
+  .searchcontainer.home.key {
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .searchcontainer.train.trainers {
+    padding-right: 10px;
+  }
+  .searchparagraph {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .searchbar.box {
+    width: 100%;
+  }
+  .searchbar.trainers {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .searchbar.keyaccess {
+    width: 75%;
+  }
+  .searchboxsection {
+    display: none;
+    margin-bottom: auto;
+  }
+  .searchbox {
+    height: auto;
+    margin-top: 5px;
+  }
+  .searchboxrow {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .searchboxheader {
+    padding-left: 20px;
+  }
+  .leftcolumn {
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px none #000;
+  }
+  .rightcolumn {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .articlesbox {
+    overflow: scroll;
+    height: 500px;
+  }
+  .article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .article.workout {
+    padding-right: 0px;
+  }
+  .articleheading {
+    padding-left: 0px;
+    float: left;
+  }
+  .articledescrp {
+    display: block;
+  }
+  .image {
+    width: 100%;
+    height: 60%;
+    float: left;
+  }
+  .articleparagraphdescription {
+    padding-left: 0px;
+  }
+  .author {
+    float: right;
+    font-weight: 400;
+    text-transform: none;
+  }
+  .author.workout {
+    padding-left: 0px;
+  }
+  .sidenavmenubutton {
+    padding-left: 18px;
+  }
+  .headingblock {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .formwrapper {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .itemblock {
+    width: 95%;
+  }
+  .itembox {
+    height: 500px;
+  }
+  .keyfield {
+    width: 100%;
+  }
+  .keyfield.warning {
+    width: 100%;
+  }
+  .keyform {
+    margin-top: 0px;
+  }
+  .healthgoalsfilterbutton {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  .radiobuttonform {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .confirmtext {
+    margin-left: 0px;
+  }
+  .confirmcol {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .reviewtab {
+    width: 100%;
+  }
+  .reviewtab.w--current {
+    width: 100%;
+  }
+  .reviewtab.hgi {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .pricetext {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .logheader {
+    font-size: 13px;
+    text-transform: none;
+  }
+  .logheader.content.product {
+    line-height: 22px;
+  }
+  .logheader.calsburned {
+    line-height: 20px;
+  }
+  .logheader.purchases.confirmation {
+    text-align: center;
+  }
+  .settingsdiv.privacycontent {
+    padding-right: 20px;
+  }
+  .logchart {
+    overflow: scroll;
+    width: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .trophy {
+    padding-top: 10px;
+  }
+  .modalnotrophy {
+    display: none;
+  }
+  .dietlogfield.servingsize {
+    width: 100%;
+  }
+  .dietlogfield.waterconsumed {
+    width: 100%;
+  }
+  .logfoodbutton {
+    margin-bottom: 38px;
+  }
+  .accordianshape {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .logo {
+    margin-left: 0px;
+  }
+  .navmenu {
+    position: absolute;
+    overflow: auto;
+  }
+  .textfield {
+    width: 100%;
+  }
+  .textfield.forgotpwtxtfield {
+    display: block;
+    width: 109%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mobiicon {
+    font-size: 45px;
+  }
+  .menubutton.sidenavmenubutton {
+    display: block;
+  }
+  .communitybg {
+    background-image: url('../images/CommunityBG-01.png');
+    background-size: cover;
+  }
+  .communitybox {
+    width: auto;
+    height: 619px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    border-radius: 0px;
+  }
+  .communitybox.createaccbox {
+    padding-top: 0px;
+    padding-bottom: 35px;
+  }
+  .communitybox.createaccbox.symptomsbox {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    padding-bottom: 35px;
+  }
+  .communitybox.createaccbox.forgotpwbox {
+    width: 100%;
+  }
+  .loginheader {
+    margin-top: 0px;
+  }
+  .loginfields {
+    width: 96%;
+  }
+  .loginfields.createaccfields {
+    display: block;
+    width: 96%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .loginfields.createaccfields.rtcol {
+    display: block;
+    width: 96%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 12px;
+    padding-left: 0px;
+  }
+  .loginfields.createaccfields.rtcol.byspfields {
+    width: 100%;
+  }
+  .loginfields.createaccfields.byspfields {
+    width: 60%;
+  }
+  .loginfields.email {
+    width: 96%;
+  }
+  .rmbrme {
+    padding-right: 22px;
+  }
+  .rmbrme.forgotpw {
+    padding-left: 0px;
+  }
+  .continuebuttons {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 11%;
+    padding-left: 11%;
+    font-size: 12px;
+  }
+  .continuebuttons.loginbtn {
+    margin-top: 2px;
+    margin-right: auto;
+    margin-left: 5px;
+    padding-right: 30%;
+    padding-left: 30%;
+    font-size: 12px;
+  }
+  .continuebuttons.createaccfield {
+    display: block;
+    width: 96%;
+    height: 40px;
+    margin: 5px auto 35px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .continuebuttons.createaccfield.byspbutton {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .continuebuttons.createaccfield.byspbutton.healthgoals {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .continuebuttons.createaccfield.byspbutton.bysp {
+    width: 100%;
+  }
+  .continuebuttons.browsebtn {
+    width: auto;
+    margin-right: 15px;
+    margin-left: 26px;
+  }
+  .continuebuttons.symptomsbutton {
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    float: right;
+  }
+  .continuebuttons.forgotpwbtn.sendcode {
+    display: block;
+    width: 109%;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .continuebuttons.forgotpwbtn.forgotpwcontbtn {
+    display: block;
+    width: 109%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .continuebuttons.forgotpwbtn.forgotpwcontbtn.savebtn {
+    display: block;
+    width: 109%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .continuebuttons.trainerprofilebutton {
+    width: 150px;
+  }
+  .continuebuttons.trainerprofilebutton.editprofile {
+    top: 95px;
+    right: auto;
+    width: 50%;
+    margin-left: 10px;
+  }
+  .boxheader {
+    padding-top: 0px;
+    padding-right: 0px;
+  }
+  .boxtitle {
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .boxdesc {
+    margin-left: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-indent: 0px;
+  }
+  .selectfield {
+    display: block;
+    width: 160px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 12px;
+  }
+  .selectfield.rtcol {
+    display: block;
+    width: 96%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .selectfield.trainerspecialtydd {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .selectfield.gymaffiliation {
+    margin-left: auto;
+  }
+  .selectfield.symptomsfield {
+    width: 108%;
+    margin-bottom: 0px;
+  }
+  .selectfield.height.in {
+    position: static;
+    display: inline-block;
+    width: 49%;
+    margin-left: 7px;
+  }
+  .selectfield.height.ft {
+    display: inline-block;
+    width: 49%;
+    margin-right: auto;
+    margin-left: 0px;
+    padding-left: 12px;
+  }
+  .selectfield.train.trainers.location {
+    margin-left: 0px;
+  }
+  .selectfield.train.trainers.location.nutrition {
+    float: none;
+  }
+  .loginlink {
+    display: block;
+    margin-right: auto;
+    margin-left: -47%;
+  }
+  .trainertype {
+    width: 96%;
+    margin-left: auto;
+  }
+  .contentcolumns {
+    padding-right: 10px;
+  }
+  .contentcolumns.trainerprofilecolumns {
+    padding-right: 10px;
+  }
+  .contentcontainer {
+    padding-top: 100px;
+  }
+  .contentcontainer.trainerprofilecontainer {
+    height: auto;
+    min-height: 100vh;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .activitylevel {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .activtyboxtext.uploadboxtxt.healthgoalscategorytext {
+    text-align: center;
+  }
+  .activityboxforms {
+    width: 60%;
+  }
+  .rememberme {
+    margin-left: -1px;
+  }
+  .remembermebox {
+    margin-top: 3px;
+    margin-right: 0px;
+    margin-left: auto;
+    float: right;
+  }
+  .remebermetext {
+    margin-left: 30%;
+  }
+  .explaindisability {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .descbox.specialtybox {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .descbox.specialtybox.uploadbox {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .descbox.specialtybox.uploadboxrt {
+    margin-top: 35px;
+  }
+  .descbox.uploadphotobox {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .activitylevelrow {
+    padding-left: 0px;
+  }
+  .healthgoalsrow1 {
+    margin-top: 35px;
+  }
+  .healthgoalsrow1.healthgoalsrow2 {
+    margin-top: 0px;
+  }
+  .healthgoalsbutton {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .healthgoalsbutton.suggests {
+    width: 100%;
+  }
+  .heatlgoalscontainer {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .column1 {
+    margin-bottom: 20px;
+  }
+  .trainerq {
+    width: 96%;
+    height: 70px;
+    margin-right: 2%;
+    margin-left: auto;
+    padding: 0px 12px 0px 6px;
+  }
+  .continuebutton {
+    display: block;
+    width: 96%;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .continuebutton.key {
+    width: 100%;
+  }
+  .continuebutton.confirmbutton {
+    width: 100%;
+  }
+  .continuebutton.confirmbutton.editbutton.basicinfotab {
+    left: 20px;
+    width: 30%;
+  }
+  .continuebutton.confirmbutton.editbutton.bysptab {
+    left: 20px;
+    width: 30%;
+  }
+  .continuebutton.confirmbutton.editbutton.hgtab {
+    left: 20px;
+    width: 30%;
+  }
+  .continuebutton.confirmbutton.review {
+    width: 90%;
+  }
+  .continuebutton.waiver {
+    right: 10px;
+    width: 40%;
+    margin-top: 35px;
+  }
+  .continuebutton.waiver.purchasewaiver.back {
+    left: 10px;
+    width: 30%;
+  }
+  .areyouatrainerrow {
+    padding-top: 0px;
+  }
+  .bottomtextblock {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: left;
+  }
+  .bottomtextblock.text {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: left;
+  }
+  .insidecontainer {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-right: 40px;
+  }
+  .pricingchartcontainer {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .pricechartbox {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .pricechartbox.review {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .buttonrow {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .buttonrow.healthgoals {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .setuptab {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
+  .tabltarw {
+    display: none;
+    margin-bottom: 10px;
+  }
+  .tabrtarw {
+    display: none;
+  }
+  .buttoncolumn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+  }
+  .contenttype {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contenttype.pricingtypeboxes {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .contenttypetext {
+    display: block;
+    overflow: visible;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    font-size: 100%;
+    text-align: center;
+  }
+  .contenttypetextitalize {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .pricingrow {
+    display: block;
+  }
+  .suggestioncontainer {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .symptomslink {
+    display: inline;
+    border-bottom: 2px solid #f3840e;
+    color: #b82106;
+    text-align: left;
+    text-decoration: none;
+  }
+  .forgotpwcontainer {
+    padding-right: 40px;
+    padding-left: 20px;
+  }
+  .resetpwcontainer {
+    padding-left: 20px;
+  }
+  .modal-window {
+    width: 100%;
+  }
+  .trainerbackground {
+    height: auto;
+  }
+  .trainerprofiletext.plan {
+    margin-bottom: 35px;
+  }
+  .trainerprofilecolumn2 {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .profiletrainertabmenu {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .trainerprofiletabs.tab4 {
+    display: block;
+    width: 100%;
+    height: 110px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+  }
+  .trainerprofiletabs.tab4:hover {
+    padding-top: 10px;
+  }
+  .trainerprofiletabs.tab4.w--current {
+    height: 110px;
+    padding-top: 10px;
+  }
+  .trainerprofiletabs.tab4.w--current:hover {
+    padding-top: 10px;
+  }
+  .trainerprofiletabs.tab1 {
+    display: block;
+    width: 100%;
+    height: 110px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    padding-top: 10px;
+  }
+  .trainerprofiletabs.tab1.w--current {
+    width: 100%;
+    height: 110px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  .trainerprofiletabs.tab1.w--current:hover {
+    height: 110px;
+  }
+  .trainerprofiletabs.weightlosstab {
+    display: block;
+    width: 100%;
+    height: 110px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    padding-top: 10px;
+  }
+  .trainerprofiletabs.weightlosstab.w--current {
+    margin-bottom: 10px;
+  }
+  .trainerprofiletabs.tab3 {
+    width: 100%;
+    height: 110px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  .trainerprofiletabs.tab3.w--current {
+    margin-bottom: 10px;
+  }
+  .tabscontent {
+    width: 100%;
+  }
+  .slides.results {
+    width: 100%;
+  }
+  .buttoncontainer {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .movable-slider {
+    position: static;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 137px;
+    text-align: center;
+  }
+  .heightdropdowns {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .heightbox {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .sidenav.home {
+    display: none;
+  }
+  .seeksearch.train {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .seeksearch.train.trainers {
+    background-image: url('../images/trainbg-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .seeksearch.home {
+    display: block;
+  }
+  .seeksearch.settings {
+    height: auto;
+  }
+  .searchheading {
+    margin-top: 30px;
+  }
+  .searchcontainer {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .searchcontainer.train.trainers {
+    padding-right: 10px;
+  }
+  .searchparagraph {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .searchbar {
+    width: 100%;
+  }
+  .searchbar.trainers {
+    width: 100%;
+  }
+  .searchbar.trainers.nutrition {
+    display: block;
+    float: left;
+  }
+  .searchbar.keyaccess {
+    width: 100%;
+  }
+  .searchboxsection {
+    display: block;
+    margin-bottom: auto;
+  }
+  .searchbox {
+    height: auto;
+  }
+  .searchboxrow {
+    margin-bottom: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .searchboxheader {
+    padding-left: 20px;
+  }
+  .leftcolumn {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .rightcolumn {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .article.workout {
+    padding-right: 0px;
+  }
+  .articleheading {
+    float: none;
+  }
+  .image {
+    width: 100%;
+  }
+  .author {
+    display: block;
+    padding-right: 0px;
+    float: none;
+  }
+  .basedon {
+    display: inline-block;
+    float: none;
+  }
+  .headingblock {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .formwrapper {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .healthgoalscontainer.reviewhg {
+    margin-top: 65px;
+  }
+  .keyfield.warning {
+    width: 100%;
+  }
+  .healthgoalsfilterbutton {
+    margin-right: 10px;
+    margin-left: 0px;
+    float: left;
+    text-align: left;
+  }
+  .radiobuttonform {
+    display: block;
+    float: none;
+  }
+  .sedentary {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .confirmtext {
+    margin-left: 0px;
+  }
+  .confirmcol {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .reviewtab {
+    padding-left: 20px;
+  }
+  .tabmenutext {
+    margin-left: 0px;
+  }
+  .waiverdiv {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .waivertextbox {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .logheader {
+    line-height: 22px;
+  }
+  .logheader.content {
+    font-size: 10px;
+    line-height: 38px;
+  }
+  .settingsdiv.privacycontent {
+    padding-right: 0px;
+  }
+  .log.toplt {
+    height: 66px;
+  }
+  .log.topmid {
+    height: 66px;
+  }
+  .log.toprt {
+    height: 66px;
+  }
+  .log.midltoutter {
+    height: 66px;
+  }
+  .log.midinner {
+    height: 66px;
+  }
+  .log.midrtoutter {
+    height: 66px;
+  }
+  .log.botlt {
+    height: 66px;
+  }
+  .log.botmid {
+    height: 66px;
+  }
+  .log.botrt {
+    height: 66px;
+  }
+  .trophy {
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .dlarrow {
+    padding-bottom: 10px;
+  }
+  .activitycontent {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
